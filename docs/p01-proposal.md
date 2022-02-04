@@ -37,6 +37,49 @@ We are concerned with inequity in students having access to broadband, because i
 
 ### Design Situation (Daniel)
 
+- **Project framing**:
+
+  Education is both a basic human right and a crucial factor in sustainable development. It enables individuals to build more prosperous lives and societies to achieve economic prosperity. In the modern world, education is closely intertwined with the Internet. The Internet enhances the educational experience in innumerable ways: it opens doorways to a wealth of information, increases opportunities for learning in and beyond the classroom, and provides powerful tools to support the learning experience. 	
+
+  However, if the Internet does in fact provide significant educational advantages, this inherently creates a disparity between students who have Internet access and those who do not. Just as people do not possess equal wealth, not every student has equal access to the Internet. While an impressive 99 percent of US public schools have access to the Internet (NCES, n.d.), many developing nations struggle to provide even a traditional classroom education. In his book Outliers, author Malcolm Gladwell describes the biblically eponymous “Matthew Effect”- those with advantages inevitably compound their gains, while those with disadvantages inevitably compound losses (Gwinn, 2008). In the same vein, students with Internet access will further their education, while those without access will fall behind. This snowball effect can widen social and economic disparities amongst nations, social classes, and other groups. It will ultimately pose questions about how society should address the Internet’s disparate impact on education.
+
+
+- **Human Values:**:
+  + *Equality*:
+
+    The Internet’s disparate impact on education is fundamentally a matter of equality. Varying levels of Internet access inherently create unequal learning environments. As a result, some students are presented with better opportunities through their superior education, while others lag behind their peers. The main goal is to bridge this educational gap.
+  + *Opportunity / Well-being*:
+
+    Students without access to the Internet are likely to have worse educational experiences than their peers. As a result, they will lag behind and have comparatively limited future opportunities. We should aspire to provide these students the opportunity to have an education bolstered by the Internet, thus paving the way towards a brighter future.
+
+  + *Value Tensions*:
+
+    These two values are ostensibly aligned. In order to seek equality in education, we should ideally provide opportunities to students with minimal Internet access. However, it is possible to seek equality in the opposite direction- by denying the Internet from students currently utilizing it. This may result in more equality, but lessen opportunities for the bereft students and compromise their well-being.
+
+
+- **Direct Stakeholders:**
+
+  One group of direct stakeholders is educational institutions. They include both public and private schools. These educational institutions are ultimately responsible for providing their students the best education possible. If data unequivocally proves that Internet access is indispensable to a superb education, they will be incentivized to provide Internet access to their students.
+
+  Another group of direct stakeholders is organizations with an interest in educational rights, including the United Nations. These organizations have a mission to make education accessible. In fact, the United Nations’ fourth Sustainable Development goal is to “ensure inclusive and equitable quality education and promote lifelong learning opportunities for all” (InternetSociety, 2017). If a lack of Internet access renders traditional education obsolete, then these organizations will strive to make Internet-based education accessible.
+
+
+- **Indirect Stakeholders:**
+
+  The most obvious group of indirect stakeholders is 1) students with minimal Internet access. Any efforts at making Internet-based education accessible will directly benefit them. 2) Society as whole would also be indirect stakeholders. If Internet access bolsters more students’ education, then economic output will increase in the long run. 3) Families of students with minimal Internet access would benefit as well, as they would be able to see one of their members receive a quality education. 4) Finally, current students with Internet-based education may be impacted. If other students are granted an Internet-based education, this may increase academic competition for the incumbent privileged students.
+
+
+- **Benefits:**
+
+  By taking action upon the Internet’s disparate impact on education, there are many benefits to be reaped. First, we may establish equality in education and welfare amongst people. As the world is becoming more complex, education becomes more closely correlated with career success and overall welfare. As more people receive better education, they will inevitably lead more prosperous lives. Second, better education supported by the Internet will create more educated citizens, which in turn will lead to increased economic output and a more well-functioning society in the long run.
+
+
+- **Harms:**
+
+  One potential harm is the event of more fierce competition in education. If more underprivileged students begin to receive an Internet-based education, this may increase competition in academics as a whole. While it would provide opportunities to the underprivileged students, the incumbent privileged students would likely suffer from higher competition.
+
+  Another potential harm is the event of organizations taking a regressive approach to the problem. Rather than providing Internet access to underprivileged students, organizations may decide to limit Internet access to students who already have it. This would in theory bridge the gap between the privileged and underprivileged students. It is also theoretically easy to implement, since it simply requires taking resources away rather than providing them. However, this would harm the education of students already benefiting from Internet access and may indirectly impact the economy.
+
 ### Research Questions
 1. Does having limited broadband access have an impact on academic performance?
 2. Does the internet impact math performance differently compared to reading?
