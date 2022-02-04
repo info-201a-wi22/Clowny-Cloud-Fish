@@ -96,6 +96,12 @@ Acknowledge local point for giving us our code name and selling overpriced food
 
 ### References (Hanna)
 
+https://nces.ed.gov/pubs2002/internet/3.asp
+
+https://www.seattletimes.com/entertainment/books/malcolm-gladwell-dissects-success-in-outliers/
+
+https://www.internetsociety.org/resources/doc/2017/internet-access-and-education/
+
 ### Appendix A:
 
 |Element | Brief Description|
