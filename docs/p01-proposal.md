@@ -1,20 +1,63 @@
-# Title of your Project: Project Proposal 
+# Broadband Effect on Education
+
 
 **TODO**: Edit this file. Your project proposal goes here. Save and delete the developer notes when done.
 
 ## Developer Notes
 
 * **Where is the project brief?**  [`../instructions/project-design-brief.pdf`](../instructions/project-design-brief.pdf).
-* **Making Progress**: We understand this work might be difficult. Also, we understand that your project ideas might not be completely worked out. So, we ask that you do the best you can. You will receive specific guidance from your TA and constructive feedback. We are confident that you will succeed! 
-* **What should be included in the proposal?** Every proposal will be different. It depends on your particular project.  That said, in the table below you will find the expected report elements.  It is important that you engage with and respond to the the Design Brief. 
-* **How should the proposal be formatted?** You should format your proposal using Markdown in this file. You should aim for a professional presentation - clear, concise, interesting, and free of spelling and grammatical errors. 
-* **What headings should we use?** As needed, the suggested headings below can be revised and new headings and sub-headings can be added. Please use headings, bullet lists, tables, figures, and other markdown code effectively - seek a professional presentation. 
+* **Making Progress**: We understand this work might be difficult. Also, we understand that your project ideas might not be completely worked out. So, we ask that you do the best you can. You will receive specific guidance from your TA and constructive feedback. We are confident that you will succeed!
+* **What should be included in the proposal?** Every proposal will be different. It depends on your particular project.  That said, in the table below you will find the expected report elements.  It is important that you engage with and respond to the the Design Brief.
+* **How should the proposal be formatted?** You should format your proposal using Markdown in this file. You should aim for a professional presentation - clear, concise, interesting, and free of spelling and grammatical errors.
+* **What headings should we use?** As needed, the suggested headings below can be revised and new headings and sub-headings can be added. Please use headings, bullet lists, tables, figures, and other markdown code effectively - seek a professional presentation.
 * **Finishing up.** When you are finished writing and formatting your proposal, save these developer notes(they might useful in the future). Then, delete them.
 * **Questions?** If you have questions, please ask your TA or post on Teams.
 
+### Code Name:
+**Clowny-Cloud-Fish**
+
+### Authors:
+**Nick Vaughn, Daniel Lee, Hanna Lee, John Nguyen**
+
+### Affiliation:
+**INFO-201: Technical Foundations of Informatics - The Information School - University of Washington**
+
+### Date:
+**February 4th, 2022**
+
+### Abstract
+We are concerned with inequity in students having access to broadband, because it may create a disadvantage for many students as education relies more on technology. To address this concern, we plan to analyze multiple datasets on student performance in different subjects and see if there is a correlation between their performance and access to broadband.
+
+### Keywords
+1. Broadband
+2. Education
+3. Accessibility
+
+### Introduction
+
+### Design Situation (Daniel)
+
+### Research Questions
+1. Does having limited broadband access have an impact on academic performance?
+2. Does the internet impact math performance differently compared to reading?
+3. Is there a connection between academic performance, urban, and rural areas?
+
+### The Dataset (Hanna)
+
+### Expected Implications (John)
+
+### Limitations (Nick)
+
+### Acknowledgements
+Acknowledge local point for giving us our code name and selling overpriced food
+
+### References (Hanna)
+
+### Appendix A:
+
 |Element | Brief Description|
 |---------------| --------------
-|Code name | Give your project a _code name_, a short, evocative name for efficiently referring to your project. Your code name does not change! Examples: _Jazz-4_, _Rocking Fish_, etc. | 
+|Code name | Give your project a _code name_, a short, evocative name for efficiently referring to your project. Your code name does not change! Examples: _Jazz-4_, _Rocking Fish_, etc. |
 |Project title| Give your project a concise, interesting title that summarizes the entirety of your project. (Your title can change on subsequent deliverables.) |
 |Authors | Names of your team members and contact information (email addresses). |
 |Affiliation |  INFO-201: Technical Foundations of Informatics - The Information School - University of Washington |
