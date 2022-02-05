@@ -16,6 +16,9 @@
 ### Code Name:
 **Clowny-Cloud-Fish**
 
+### Project Title:
+**Broadband Effect on Education**
+
 ### Authors:
 **Nick Vaughn, Daniel Lee, Hanna Lee, John Nguyen**
 
@@ -26,11 +29,11 @@
 **February 4th, 2022**
 
 ### Abstract
-We are concerned with inequity in students having access to broadband, because it may create a disadvantage for many students as education relies more on technology. To address this concern, we plan to analyze multiple datasets on student performance in different subjects and see if there is a correlation between their performance and access to broadband.
+We are concerned with inequity in students having broadband access because it may disadvantage many students as education relies more on technology. To address this concern, we plan to analyze multiple datasets on student performance in different subjects and see if there is a correlation between their performance and broadband access.
 
 ### Keywords
 1. Broadband
-2. Education
+2. Equitable Education
 3. Accessibility
 
 ### Introduction
