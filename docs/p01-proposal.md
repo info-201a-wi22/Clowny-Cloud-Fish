@@ -32,7 +32,7 @@ Education is fundamental to our growth whether it’s done in a classroom settin
 
   Education enables individuals to build more prosperous lives and societies to achieve economic prosperity. In the modern world, education is closely intertwined with the Internet. The Internet enhances the educational experience in innumerable ways: it provides a wealth of information, increases opportunities for learning, and provides powerful tools to support the learning experience (Internet Society, 2017). 	
 
-  However, the Internet’s educational benefits inherently create a disparity between students who have Internet access and those who do not. Not every student has equal access to the Internet. While an impressive 99 percent of US public schools have access to the Internet (NCES, n.d.), many developing nations struggle to provide even a traditional classroom education. In his book Outliers, author Malcolm Gladwell describes the biblically eponymous “Matthew Effect”- advantages compound gains while disadvantages compound losses (Gwinn, 2008). In the same vein, students with Internet access will further their education, while those without access will fall behind. This snowball effect can widen social and economic disparities amongst nations, social classes, and other groups.
+  However, the Internet’s educational benefits inherently create a disparity between students who have Internet access and those who do not. Not every student has equal access to the Internet. While an impressive 99 percent of US public schools have access to the Internet (NCES, n.d.), many developing nations struggle to provide even a traditional classroom education. In his book Outliers, author Malcolm Gladwell describes the biblically eponymous “Matthew Effect”- advantages compound gains while disadvantages compound losses (Gwinn, 2008). In the same vein, students with Internet access will further their education, while those with minimal access will fall behind. This snowball effect can widen social and economic disparities amongst nations, social classes, and other groups.
 
 
 
@@ -44,7 +44,7 @@ Education is fundamental to our growth whether it’s done in a classroom settin
 
   + *Opportunity / Well-being*:
 
-    Students without access to the Internet are likely to have worse educational experiences and thus lesser future opportunities than their peers. We should aspire to provide them the opportunity to have an Internet-based education.
+    Students with minimal access to the Internet are likely to have worse educational experiences and thus lesser future opportunities than their peers. We should aspire to provide them the opportunity to have an Internet-based education.
 
   + *Value Tensions*:
 
@@ -65,11 +65,11 @@ Education is fundamental to our growth whether it’s done in a classroom settin
 
 - **Indirect Stakeholders:**
 
-  + *Underprivileged Students*: Any efforts at making Internet-based education accessible will directly benefit them.
+  + *Underprivileged Students*: Internet access will improve their quality of education and provide better future opportunities.
 
   + *Society*: If Internet access bolsters more students’ education, then economic output will increase in the long run.
 
-  + *Families*: They would be able to see one of their members receive a quality education.
+  + *Families*: They would be able to see one their own members receive quality education.
 
   + *Privileged students*: If other students are granted an Internet-based education, this may increase academic competition for the incumbent privileged students.
 
