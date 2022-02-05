@@ -124,15 +124,24 @@ We are concerned with inequity in students having broadband access because it ma
   -	The math assessment was handled with the same care and scrutiny as the reading assessment. Therefore, we find it credible.
   -	This is the same source as the previous assessment and the citation is listed in References.
 - **June 2016 FCC Area Table**
-	 - 178,992 observations and 7 variables
-	 - The dataset shows the broadband coverage in geographic areas throughout the country.
-   - Each observation reveals the type of area, ID of area, the technology of broadband, urban/rural, tribal/nontribal, download speeds, and the number of providers. We don't see the average price or who the providers are.
-	 - It is unclear who collected the data, but the owner is Humza Riaz. It was created on March 18, 2018 and reveals the general broadband accessibility in this country.
-    -	This is raw data from the FCC's broadband website which has an interactive map feature that tracks various points of broadband usage in the country. 
-    - The origin of funding is unclear, but FCC is part of the federal government.
-    - This data can allow for greater accessibility to broadband or highlight price gouging to users in rural areas.
+  - 178,992 observations and 7 variables
+
+  - The dataset shows the broadband coverage in geographic areas throughout the country.
+
+  - Each observation reveals the type of area, ID of area, the technology of broadband, urban/rural, tribal/nontribal, download speeds, and the number of providers. We don't see the average price or who the providers are.
+
+  - It is unclear who collected the data, but the owner is Humza Riaz. It was created on March 18, 2018 and reveals the general broadband accessibility in this country.
+
+  -	This is raw data from the FCC's broadband website which has an interactive map feature that tracks various points of broadband usage in the country. 
+
+  - The origin of funding is unclear, but FCC is part of the federal government.
+
+  - This data can allow for greater accessibility to broadband or highlight price gouging to users in rural areas.
+
   - The data was collected through surveys and public broadband information. It is credible since it's reporting hard data, but surveys are never 100%.
+
   - We found this dataset through Data.gov. The citation is listed in references.
+
 - **2020 FCC Geography Lookup**
   -	22,514,373 observations and 10 variables
   - This was our reference guide for the FCC Area Table because the ID of Area was coded as a number.
