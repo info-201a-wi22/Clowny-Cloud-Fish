@@ -116,9 +116,9 @@ Education is fundamental to our growth whether it’s done in a classroom settin
   - The dataset shows the broadband coverage in geographic areas throughout the country.
   - Each observation reveals the type of area, ID of area, the technology of broadband, urban/rural, tribal/nontribal, download speeds, and the number of providers. We don't see the average price or who the providers are.
   - It is unclear who collected the data, but the owner is Humza Riaz. It was created on March 18, 2018 and reveals the general broadband accessibility in this country.
-  -	This is raw data from the FCC's broadband website which has an interactive map feature that tracks various points of broadband usage in the country.
-  - The origin of funding is unclear, but FCC is part of the federal government.
-  - This data can allow for greater accessibility to broadband or highlight price gouging to users in rural areas.
+    -	This is raw data from the FCC's broadband website which has an interactive map feature that tracks various points of broadband usage in the country.
+    - The origin of funding is unclear, but FCC is part of the federal government.
+    - This data can allow for greater accessibility to broadband or highlight price gouging to users in rural areas.
   - The data was collected through surveys and public broadband information. It is credible since it's reporting hard data, but surveys are never 100%.
   - We found this dataset through Data.gov. The citation is listed in references.
 - **2020 FCC Geography Lookup**
@@ -130,7 +130,7 @@ Education is fundamental to our growth whether it’s done in a classroom settin
 
 
 ### Expected Implications
-In the history of education, having access to the internet has never been so critical. Teachers are increasingly turning to cloud-based learning management systems, such as Canvas, for the purpose of delivering and collecting assignments. This puts students without reliable access to the internet at a serious disadvantage. Not only are they unable to submit deliverables, but they also lack access to other online learning sources such as YouTube and Khan Academy. Broadband programs that provide students with a reliable internet connection can be funded by the government to address this inequity issue in education. Internet providers that want to invest in the future can offer students discounts on certain speeds. Internet companies can also upgrade or replace fiber optic cables in certain areas to improve broadband speed. 
+In the history of education, having access to the internet has never been so critical. Teachers are increasingly turning to cloud-based learning management systems, such as Canvas, for the purpose of delivering and collecting assignments. This puts students without reliable access to the internet at a serious disadvantage. Not only are they unable to submit deliverables, but they also lack access to other online learning sources such as YouTube and Khan Academy. Broadband programs that provide students with a reliable internet connection can be funded by the government to address this inequity issue in education. Internet providers that want to invest in the future can offer students discounts on certain speeds. Internet companies can also upgrade or replace fiber optic cables in certain areas to improve broadband speed.
 
 ### Limitations
 Our dataset of the performances of students by location is from 2011, and technology and its use in education has changed a lot since then. This posses a limitation, as the presence or extent of the disparity in education between areas based on broadband access may not be seen. This may be addressed by finding more data, but it may be something that we have to accept and address in our report. Our broadband data is also from 2016, so the state of access may have been different in 2011. Another limitation is the measurement of quality of education. Our data uses standardized testing, which although standard, may not accurately measure the performance of students and the quality of their education. Additionally, any trend between broadband access and education may be due to correlation rather than causation. Areas with more broadband access are likely to be wealthier and more urban, thus are likely to also have a higher budget for schooling. This means areas with greater access may have better performance in education due to better textbooks and teachers rather than their access to the internet.
@@ -140,10 +140,16 @@ Acknowledge local point for giving us our code name and selling _**overpriced**_
 
 ### References
 
-https://nces.ed.gov/pubs2002/internet/3.asp
+Gwinn, M. A. (2008, November 12). Malcolm Gladwell dissects success in "Outliers". The Seattle Times. Retrieved February 4, 2022, from https://www.seattletimes.com/entertainment/books/malcolm-gladwell-dissects-success-in-outliers/
 
-https://www.seattletimes.com/entertainment/books/malcolm-gladwell-dissects-success-in-outliers/
+Internet Access and Education: Key considerations for policy makers. Internet Society. (2017, November 20). Retrieved February 4, 2022, from https://www.internetsociety.org/resources/doc/2017/internet-access-and-education/
 
-https://www.internetsociety.org/resources/doc/2017/internet-access-and-education/
+Office of Elementary and Secondary Education. (2016). EDFacts Assessment, 2011-12 [csv]. Retrieved from https://catalog.data.gov/dataset/edfacts-assessment-2011-12
+
+Riaz, Humza. (2018). Area Table June2016 [csv]. Retrieved from https://opendata.fcc.gov/Wireline/Area-Table-June2016/nb5q-gkcn
+
+Riaz, Humza. (2019). Geography Lookup Table [csv]. Retrieved from https://opendata.fcc.gov/Wireline/Geography-Lookup-Table/v5vt-e7vw
+
+School Connectivity. National Center for Education Statistics. (n.d.). Retrieved February 4, 2022, from https://nces.ed.gov/pubs2002/internet/3.asp 
 
 ### Appendix A:
