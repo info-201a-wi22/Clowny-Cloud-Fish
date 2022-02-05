@@ -28,7 +28,7 @@ Education is fundamental to our growth whether it’s done in a classroom settin
 
 ### Design Situation
 
-- **Project framing**:
+- **Project Framing**:
 
   Education enables individuals to build more prosperous lives and societies to achieve economic prosperity. In the modern world, education is closely intertwined with the Internet. The Internet enhances the educational experience in innumerable ways: it provides a wealth of information, increases opportunities for learning, and provides powerful tools to support the learning experience (Internet Society, 2017). 	
 
@@ -144,12 +144,12 @@ Gwinn, M. A. (2008, November 12). Malcolm Gladwell dissects success in "Outliers
 
 Internet Access and Education: Key considerations for policy makers. Internet Society. (2017, November 20). Retrieved February 4, 2022, from https://www.internetsociety.org/resources/doc/2017/internet-access-and-education/
 
-Office of Elementary and Secondary Education. (2016). EDFacts Assessment, 2011-12 [csv]. Retrieved from https://catalog.data.gov/dataset/edfacts-assessment-2011-12
+Office of Elementary and Secondary Education. (2016). EDFacts Assessment, 2011-12 [CSV]. Retrieved from https://catalog.data.gov/dataset/edfacts-assessment-2011-12
 
-Riaz, Humza. (2018). Area Table June2016 [csv]. Retrieved from https://opendata.fcc.gov/Wireline/Area-Table-June2016/nb5q-gkcn
+Riaz, Humza. (2018). Area Table June2016 [CSV]. Retrieved from https://opendata.fcc.gov/Wireline/Area-Table-June2016/nb5q-gkcn
 
-Riaz, Humza. (2019). Geography Lookup Table [csv]. Retrieved from https://opendata.fcc.gov/Wireline/Geography-Lookup-Table/v5vt-e7vw
+Riaz, Humza. (2019). Geography Lookup Table [CSV]. Retrieved from https://opendata.fcc.gov/Wireline/Geography-Lookup-Table/v5vt-e7vw
 
-School Connectivity. National Center for Education Statistics. (n.d.). Retrieved February 4, 2022, from https://nces.ed.gov/pubs2002/internet/3.asp 
+School Connectivity. National Center for Education Statistics. (n.d.). Retrieved February 4, 2022, from https://nces.ed.gov/pubs2002/internet/3.asp
 
 ### Appendix A:
