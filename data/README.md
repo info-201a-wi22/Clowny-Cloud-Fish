@@ -2,25 +2,14 @@
 
 In our project, we use the following data files and Application Programming Interfaces:
 
-### Data files (TODO: Update/delete)
+### Data Files
 |Data File Name | Brief Description|
 |---------------| -----------------|
-|[EDFacts Variable Name Decoder](./csv_decoder.) | This word document listed the keys for the variables. (See data file for review)
-|[another-file](./filename2.csv) | Description ...
+|[EDFacts Assessment for Math](./edfacts_assessment_2011-12_for_math.csv) | Summary of assessment in mathematics for students in 2011-12. (See report for details.)
+|[EDFacts Assessment for Reading](./defacts_assessment_2011-12_for_reading.csv) | Summary of assessment in reading for students in 2011-12. (See report for details.)
+|[EDFacts Variable Name Decoder](./csv_decoder.doc) | This word document lists the keys for the variables in the EDFacts CSV. (See data file to review document.)
+|[FCC Geography Lookup Table](./geography_lookup_table.csv) | Summary of broadband access by geographic area. (See report for details.)
 
-### Application Programming Interfaces (API) (TODO: Update/delete)
+### Application Programming Interfaces (API)
 
-* **New York Times Books API**. The _New York Times_ provides data for Best
-Sellers lists and the books that have been reviewed in the New York Times. An overview of the API that we use in our project is available here: [Books API](https://developer.nytimes.com/docs/books-product/1/overview). For more about developing apps with New York Times data see: [NYTimes Developers](https://developer.nytimes.com/).
-
-# NOTE 1: About the `/data` Directory
-
-* Use the `/data` directory to store any data that you using in your project (for example, CSV files)
-* Edit this `README.md` file and summarize your data files
-* If you are using APIs to access data, summarize them, providing specific information
-* See examples above.
-
-# NOTE 2:  Clear and Concise Documentation
-* Please remember your audience (prospective employers, open source colleagues, TAs, Instructors). Therefore,
-aim for clarity and conciseness.
-* When done, be sure to delete these NOTE sections and the example CSV file (which are intended for you, of course, not your audience!)
+* **FCC - Open Data API**. The _FCC_ provides a June 2016 data summary of broadband availability by area. An overview of the API that we use in our project is available here: [Area Table API](https://opendata.fcc.gov/Wireline/Area-Table-June2016/nb5q-gkcn). For more FCC data see: [FCC - Open Data Database](https://opendata.fcc.gov/).
