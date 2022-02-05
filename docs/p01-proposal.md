@@ -136,7 +136,7 @@ In the history of education, having access to the internet has never been so cri
 Our dataset of the performances of students by location is from 2011, and technology and its use in education has changed a lot since then. This posses a limitation, as the presence or extent of the disparity in education between areas based on broadband access may not be seen. This may be addressed by finding more data, but it may be something that we have to accept and address in our report. Our broadband data is also from 2016, so the state of access may have been different in 2011. Another limitation is the measurement of quality of education. Our data uses standardized testing, which although standard, may not accurately measure the performance of students and the quality of their education. Additionally, any trend between broadband access and education may be due to correlation rather than causation. Areas with more broadband access are likely to be wealthier and more urban, thus are likely to also have a higher budget for schooling. This means areas with greater access may have better performance in education due to better textbooks and teachers rather than their access to the internet.
 
 ### Acknowledgements
-Acknowledge local point for giving us our code name and selling _**overpriced**_ food!
+We recognize Local Point for giving us our code name and selling food overpriced food that prompted us to examine the notion of accessibility.
 
 ### References
 
@@ -153,3 +153,4 @@ Riaz, Humza. (2019). Geography Lookup Table [CSV]. Retrieved from https://openda
 School Connectivity. National Center for Education Statistics. (n.d.). Retrieved February 4, 2022, from https://nces.ed.gov/pubs2002/internet/3.asp
 
 ### Appendix A:
+No questions at this time.
