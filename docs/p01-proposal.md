@@ -106,6 +106,40 @@ We are concerned with inequity in students having broadband access because it ma
 3. Is there a connection between academic performance, urban, and rural areas?
 
 ### The Dataset (Hanna)
+- **2011-2012 ED Facts Assessment of Reading**
+  -	16,060 observations and 228 variables
+  -	This is a reading assessment of students in some districts throughout the country from 3rd grade to high school.
+  -	The dataset gives a comprehensive view of the reading assessments in most grades at each state. It provides an insight into the scores based on race, gender, financial standing, disability, English proficiency, and migrant status. Parental education data could be included to provide further insight into student performance.
+  -	This dataset by the Department of Education was compiled in 2012.
+    - The assessment was given by local education agencies, which is stated as a variable.
+    - This was a government-funded assessment. Each state designed its exams, and federally run organizations compiled the data.
+    -	This dataset can be used to fund education programs or initiate bills to aid students in their academic efforts.
+  -	ED conducted quality checks with each state to verify the data. If something was missing or questionable, they conferred with the state to reexamine the data. They listed all anomalies within their findings.
+  -	I found this dataset through Data.gov. The citation is listed in References.
+- **2011-2012 ED Facts Assessment of Math**
+  -	16,061 observations and 228 variables
+  -	This is a math assessment of students in some districts throughout the country from 3rd grade to high school.
+  -	The observations are the same as the reading assessment except it covers math in each observation.
+  -	The collection methods, purpose, funding, and benefits are the same as the reading assessment because it is from the same source and data compilation. EDFacts separated the reading and math findings due to the different subjects.
+  -	The math assessment was handled with the same care and scrutiny as the reading assessment. Therefore, we find it credible.
+  -	This is the same source as the previous assessment and the citation is listed in References.
+- **June 2016 FCC Area Table**
+	 - 178,992 observations and 7 variables
+	 - The dataset shows the broadband coverage in geographic areas throughout the country.
+- Each observation reveals the type of area, ID of area, the technology of broadband, urban/rural, tribal/nontribal, download speeds, and the number of providers. We don't see the average price or who the providers are.
+	 - It is unclear who collected the data, but the owner is Humza Riaz. It was created on March 18, 2018 and reveals the general broadband accessibility in this country.
+    -	This is raw data from the FCC's broadband website which has an interactive map feature that tracks various points of broadband usage in the country. 
+    - The origin of funding is unclear, but FCC is part of the federal government.
+    - This data can allow for greater accessibility to broadband or highlight price gouging to users in rural areas.
+  - The data was collected through surveys and public broadband information. It is credible since it's reporting hard data, but surveys are never 100%.
+  - We found this dataset through Data.gov. The citation is listed in references.
+- **2020 FCC Geography Lookup**
+  -	22,514,373 observations and 10 variables
+  - This was our reference guide for the FCC Area Table because the ID of Area was coded as a number.
+  -	Since this was our decoder and only stated the longitude, latitude, and name of the area, we did not question the validity of the data.
+  - The table was updated on April 8, 2021.
+  -	We found this dataset through Data.gov. The citation is listed in references.
+
 
 ### Expected Implications
 Having access to an internet connection has never been so crucial in the history of education. As more teachers begin to utilize cloud-based learning management systems, such as canvas, to hand out and collect assignments, students who do not have a reliable connection to the internet are at a major disadvantage. They are unable to submit deliverables and their grades will suffer as a result. To address this inequity issue in education, the government can fund broadband programs that will provide students with a reliable internet connection. Internet providers who wish to invest in the future can provide students with discounts for certain internet speeds.  Internet companies can also upgrade or replace fiber optic cables in certain areas to improve broadband speed.
