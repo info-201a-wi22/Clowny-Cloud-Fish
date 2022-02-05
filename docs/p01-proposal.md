@@ -38,8 +38,12 @@ We are concerned with inequity in students having broadband access because it ma
 
 ### Introduction
 
+<<<<<<< HEAD
 
 ### Design Situation (Daniel)
+=======
+### Design Situation
+>>>>>>> 74658d055f1380536d5bb18b9608611e5ffbe658
 
 - **Project Framing**:
 
@@ -151,7 +155,7 @@ Our dataset of the performances of students by location is from 2011, and techno
 ### Acknowledgements
 Acknowledge local point for giving us our code name and selling overpriced food
 
-### References (Hanna)
+### References
 
 https://nces.ed.gov/pubs2002/internet/3.asp
 
