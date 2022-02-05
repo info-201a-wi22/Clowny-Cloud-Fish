@@ -1,18 +1,5 @@
 # Broadband Effect on Education
 
-
-**TODO**: Edit this file. Your project proposal goes here. Save and delete the developer notes when done.
-
-## Developer Notes
-
-* **Where is the project brief?**  [`../instructions/project-design-brief.pdf`](../instructions/project-design-brief.pdf).
-* **Making Progress**: We understand this work might be difficult. Also, we understand that your project ideas might not be completely worked out. So, we ask that you do the best you can. You will receive specific guidance from your TA and constructive feedback. We are confident that you will succeed!
-* **What should be included in the proposal?** Every proposal will be different. It depends on your particular project.  That said, in the table below you will find the expected report elements.  It is important that you engage with and respond to the the Design Brief.
-* **How should the proposal be formatted?** You should format your proposal using Markdown in this file. You should aim for a professional presentation - clear, concise, interesting, and free of spelling and grammatical errors.
-* **What headings should we use?** As needed, the suggested headings below can be revised and new headings and sub-headings can be added. Please use headings, bullet lists, tables, figures, and other markdown code effectively - seek a professional presentation.
-* **Finishing up.** When you are finished writing and formatting your proposal, save these developer notes(they might useful in the future). Then, delete them.
-* **Questions?** If you have questions, please ask your TA or post on Teams.
-
 ### Code Name:
 **Clowny-Cloud-Fish**
 
@@ -37,8 +24,9 @@ We are concerned with inequity in students having broadband access because it ma
 3. Accessibility
 
 ### Introduction
+Education is fundamental to our growth whether it’s done in a classroom setting or in our homes. As our society gravitates towards a technology-based empire, broadband must grow with our needs to prevent unbalanced progress. During the pandemic, this was highlighted when children were left to study at restaurants and parking lots with free Wi-Fi. The prevalent imbalance showcased the privilege of having expendable income for broadband and having access to reliable broadband. Our primary focus is on students and their academic progress in the year 2011-2012 and our broadband data is from 2016. We will analyze broadband access within the different geographic areas within the US and see if there’s a correlation between student academic growth and broadband access.
 
-### Design Situation (Daniel)
+### Design Situation
 
 - **Project framing**:
 
@@ -105,7 +93,7 @@ We are concerned with inequity in students having broadband access because it ma
 2. Does the internet impact math performance differently compared to reading?
 3. Is there a connection between academic performance, urban, and rural areas?
 
-### The Dataset (Hanna)
+### The Dataset
 - **2011-2012 ED Facts Assessment of Reading**
   -	16,060 observations and 228 variables
   -	This is a reading assessment of students in some districts throughout the country from 3rd grade to high school.
@@ -128,7 +116,7 @@ We are concerned with inequity in students having broadband access because it ma
   - The dataset shows the broadband coverage in geographic areas throughout the country.
   - Each observation reveals the type of area, ID of area, the technology of broadband, urban/rural, tribal/nontribal, download speeds, and the number of providers. We don't see the average price or who the providers are.
   - It is unclear who collected the data, but the owner is Humza Riaz. It was created on March 18, 2018 and reveals the general broadband accessibility in this country.
-  -	This is raw data from the FCC's broadband website which has an interactive map feature that tracks various points of broadband usage in the country. 
+  -	This is raw data from the FCC's broadband website which has an interactive map feature that tracks various points of broadband usage in the country.
   - The origin of funding is unclear, but FCC is part of the federal government.
   - This data can allow for greater accessibility to broadband or highlight price gouging to users in rural areas.
   - The data was collected through surveys and public broadband information. It is credible since it's reporting hard data, but surveys are never 100%.
@@ -145,12 +133,12 @@ We are concerned with inequity in students having broadband access because it ma
 Having access to an internet connection has never been so crucial in the history of education. As more teachers begin to utilize cloud-based learning management systems, such as canvas, to hand out and collect assignments, students who do not have a reliable connection to the internet are at a major disadvantage. They are unable to submit deliverables and their grades will suffer as a result. To address this inequity issue in education, the government can fund broadband programs that will provide students with a reliable internet connection. Internet providers who wish to invest in the future can provide students with discounts for certain internet speeds.  Internet companies can also upgrade or replace fiber optic cables in certain areas to improve broadband speed.
 
 ### Limitations
-Our dataset of the performances of students by location is from 2011, and technology and its use in education has changed a lot since then. This posses a limitation, as the presence or extent of the disparity in education between areas based on broadband access may not be seen. This may be addressed by finding more data, but it may be something that we have to accept and address in our report. Another limitation is the measurement of quality of education. Our data uses standardized testing, which although standard, may not accurately measure the performance of students and the quality of their education. Additionally, any trend between broadband access and education may be due to correlation rather than causation. Areas with more broadband access are likely to be wealthier and more urban, thus are likely to also have a higher budget for schooling. This means areas with greater access may have better performance in education due to better textbooks and teachers rather than their access to the internet.
+Our dataset of the performances of students by location is from 2011, and technology and its use in education has changed a lot since then. This posses a limitation, as the presence or extent of the disparity in education between areas based on broadband access may not be seen. This may be addressed by finding more data, but it may be something that we have to accept and address in our report. Our broadband data is also from 2016, so the state of access may have been different in 2011. Another limitation is the measurement of quality of education. Our data uses standardized testing, which although standard, may not accurately measure the performance of students and the quality of their education. Additionally, any trend between broadband access and education may be due to correlation rather than causation. Areas with more broadband access are likely to be wealthier and more urban, thus are likely to also have a higher budget for schooling. This means areas with greater access may have better performance in education due to better textbooks and teachers rather than their access to the internet.
 
 ### Acknowledgements
-Acknowledge local point for giving us our code name and selling overpriced food
+Acknowledge local point for giving us our code name and selling _**overpriced**_ food!
 
-### References (Hanna)
+### References
 
 https://nces.ed.gov/pubs2002/internet/3.asp
 
@@ -159,22 +147,3 @@ https://www.seattletimes.com/entertainment/books/malcolm-gladwell-dissects-succe
 https://www.internetsociety.org/resources/doc/2017/internet-access-and-education/
 
 ### Appendix A:
-
-|Element | Brief Description|
-|---------------| --------------
-|Code name | Give your project a _code name_, a short, evocative name for efficiently referring to your project. Your code name does not change! Examples: _Jazz-4_, _Rocking Fish_, etc. |
-|Project title| Give your project a concise, interesting title that summarizes the entirety of your project. (Your title can change on subsequent deliverables.) |
-|Authors | Names of your team members and contact information (email addresses). |
-|Affiliation |  INFO-201: Technical Foundations of Informatics - The Information School - University of Washington |
-|Date | Winter 2022|
-|Abstract | No more than three sentences that summarize your project. Focus on the very most important aspects. For example: **(1)** "Our main question is .... This question is important because .... To address the question, we will ...." **(2)** "We are concerned with ..., becuase .... To address this concern, we plan to ...." **(3)** "Consider that ....  This is important because .... Accordingly, we plan to ...."   |
-|Keywords | 3-5 keywords that summarize your project.  (e.g., "Keywords: human physiology; bicycle exercise; elderly; power and heart rate times-series data") |
-|1.0 Introduction | Briefly introduce your project. (about 150 words) |
-|2.0 Design Situation | Use short sub-sections to describe your topic and the setting (that is, the sociotechnical situation), including project framing, human values, direct and indirect stakeholders, possible harms and benefits. See the Design Brief, section B.3. **Note**: You *must* include three citations to related work (URLs to similar work, high quality articles from the popular press, reseach papers, etc. ). You may find it helpful to include a figure.  (about 400 words) |
-|3.0 Research questions | 3-5 research questions. What motivates the questions? Why are they important? See the Deign Brief, section B.4. (about 150 words) |
-|4.0 The Dataset | See Design Brief, setions B.5 (_Size and complexity_) and B.6 (_Data provenance_). Use short sub-sections for describing the size and complexity of the dataset and for describing the origins fo the data. (about 400 words) |
-|5.0 Expected Implications | Assuming you answer your research questions, briefly describe the expected or possible implications for technologists, designers, and policymakers. (about 150 words) |
-|6.0 Limitations | What limitations might you need to address? Briefly discuss. (about 150 words) |
-|Acknowledgements | Is there anyone you would like to thank? A librarian who helped you with your research? A Teaching Assistant? A friend who helped you find your data? Say thank you in this section.|
-|References | Include citations to your three references. See 2.0 Introduction. If you like, you can cite more than three references.  Please use a standard citation style of your choice.  See [Citing Sources](https://guides.lib.uw.edu/research/citations) at the UW Library. |
-|Appendix A: Questions| Do you have questions for your TA or instructor?  Include them here.|
