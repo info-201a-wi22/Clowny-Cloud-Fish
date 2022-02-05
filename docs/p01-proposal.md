@@ -128,9 +128,9 @@ We are concerned with inequity in students having broadband access because it ma
   - The dataset shows the broadband coverage in geographic areas throughout the country.
   - Each observation reveals the type of area, ID of area, the technology of broadband, urban/rural, tribal/nontribal, download speeds, and the number of providers. We don't see the average price or who the providers are.
   - It is unclear who collected the data, but the owner is Humza Riaz. It was created on March 18, 2018 and reveals the general broadband accessibility in this country.
-  -	This is raw data from the FCC's broadband website which has an interactive map feature that tracks various points of broadband usage in the country. 
-  - The origin of funding is unclear, but FCC is part of the federal government.
-  - This data can allow for greater accessibility to broadband or highlight price gouging to users in rural areas.
+    -	This is raw data from the FCC's broadband website which has an interactive map feature that tracks various points of broadband usage in the country.
+    - The origin of funding is unclear, but FCC is part of the federal government.
+    - This data can allow for greater accessibility to broadband or highlight price gouging to users in rural areas.
   - The data was collected through surveys and public broadband information. It is credible since it's reporting hard data, but surveys are never 100%.
   - We found this dataset through Data.gov. The citation is listed in references.
 - **2020 FCC Geography Lookup**
