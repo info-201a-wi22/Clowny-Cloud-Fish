@@ -132,23 +132,15 @@ Education is fundamental to our growth whether itâs done in a classroom set
 3. Does English as a second language students perform differently based on broadband speeds?
 
 ### The Dataset
-- **2011-2012 ED Facts Assessment of Reading**
-  -	16,060 observations and 228 variables
-  -	This is a reading assessment of students in some districts throughout the country from 3rd grade to high school.
-  -	The dataset gives a comprehensive view of the reading assessments in most grades at each state. It provides an insight into the scores based on race, gender, financial standing, disability, English proficiency, and migrant status. Parental education data could be included to provide further insight into student performance.
-  -	This dataset by the Department of Education was compiled in 2012.
-    - The assessment was given by local education agencies, which is stated as a variable.
-    - This was a government-funded assessment. Each state designed its exams, and federally run organizations compiled the data.
-    -	This dataset can be used to fund education programs or initiate bills to aid students in their academic efforts.
-  -	ED conducted quality checks with each state to verify the data. If something was missing or questionable, they conferred with the state to reexamine the data. They listed all anomalies within their findings.
-  -	I found this dataset through Data.gov. The citation is listed in References.
-- **2011-2012 ED Facts Assessment of Math**
-  -	16,061 observations and 228 variables
-  -	This is a math assessment of students in some districts throughout the country from 3rd grade to high school.
-  -	The observations are the same as the reading assessment except it covers math in each observation.
-  -	The collection methods, purpose, funding, and benefits are the same as the reading assessment because it is from the same source and data compilation. EDFacts separated the reading and math findings due to the different subjects.
-  -	The math assessment was handled with the same care and scrutiny as the reading assessment. Therefore, we find it credible.
-  -	This is the same source as the previous assessment and the citation is listed in References.
+- **Report Card Assessment Data 2016-2017 School Year**
+  -	951,000 observations and 30 variables
+  - We have student state assessment data of various subjects from kindergarten to 12th grade.
+  - The dataset has multiple identifiers for schools, breakdown of student demographics, different subjects, expected outcomes, and actual standing (satisfactory/unsatisfactory) of student grade/group.
+  - Age of student group and various test scores were left out. Instead the dataset categorized the students as satisfactory or unsatisfactory in the subject matter
+  - Washington Office of Superintendent of Public Instruction created the dataset on September 12, 2019. They own and update the dataset according to data.gov.
+  - Educators and any field can make money off student data because they can create supplemental resources if they find students facing difficulties in certain subjects and tailor it to the students groups/grade having the issue.
+  - The data is housed and hosted on a government website which provides added protection. The validity of the data is through direct student information data, so we confident in the outcomes.
+  - We found this dataset through Data.gov. The citation is listed in references.
 - **June 2016 FCC Area Table**
   - 178,992 observations and 7 variables
   - The dataset shows the broadband coverage in geographic areas throughout the country.
@@ -166,7 +158,6 @@ Education is fundamental to our growth whether itâs done in a classroom set
   - The table was updated on April 8, 2021.
   -	We found this dataset through Data.gov. The citation is listed in references.
 
-
 ### Expected Implications
 In the history of education, having access to the internet has never been so critical. Teachers are increasingly turning to cloud-based learning management systems, such as Canvas, for the purpose of delivering and collecting assignments. This puts students without reliable access to the internet at a serious disadvantage. Not only are they unable to submit deliverables, but they also lack access to other online learning sources such as YouTube and Khan Academy. Broadband programs that provide students with a reliable internet connection can be funded by the government to address this inequity issue in education. Internet providers that want to invest in the future can offer students discounts on certain speeds. Internet companies can also upgrade or replace fiber optic cables in certain areas to improve broadband speed.
 
@@ -182,7 +173,7 @@ Gwinn, M. A. (2008, November 12). Malcolm Gladwell dissects success in "Outliers
 
 Internet Access and Education: Key considerations for policy makers. Internet Society. (2017, November 20). Retrieved February 4, 2022, from https://www.internetsociety.org/resources/doc/2017/internet-access-and-education/
 
-Office of Elementary and Secondary Education. (2016). EDFacts Assessment, 2011-12 [CSV]. Retrieved from https://catalog.data.gov/dataset/edfacts-assessment-2011-12
+OSPI. (2019). Report Card Assessment Data 2016-17 School Year [CSV]. Retrieved from https://data.wa.gov/Education/Report-Card-Assessment-Data-2016-17-School-Year/5tvk-w2c5
 
 Riaz, Humza. (2018). Area Table June2016 [CSV]. Retrieved from https://opendata.fcc.gov/Wireline/Area-Table-June2016/nb5q-gkcn
 
