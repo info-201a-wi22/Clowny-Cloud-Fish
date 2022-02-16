@@ -129,7 +129,7 @@ Education is fundamental to our growth whether itâs done in a classroom set
 ### Research Questions
 1. Does limited broadband access impact on test satisfactory levels?
 2. Is broadband access a factor in the different test subject performance?
-3. Does English as a second language students perform differently based on broadband speeds?
+3. Does English as a second language students performance differ based on broadband speeds?
 
 ### The Dataset
 - **Report Card Assessment Data 2016-2017 School Year**
