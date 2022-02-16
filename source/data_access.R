@@ -6,15 +6,15 @@ library(tidyverse)
 
 setwd('~/info201/Clowny-Cloud-Fish/')
 
-broadband <- read.csv('./data/Area_Table_June2016.csv')
-id_lookup <- read.csv('./data/Geography_Lookup_Table.csv')
-test_scores <- read.csv('./data/Report_Card_Assessment_Data_2016-17_School_Year.csv')
+load_broadband <- read.csv('./data/Area_Table_June2016.csv')
+load_id_lookup <- read.csv('./data/Geography_Lookup_Table.csv')
+load_test_scores <- read.csv('./data/Report_Card_Assessment_Data_2016-17_School_Year.csv')
 
-id_lookup <- id_lookup %>%
+id_lookup <- load_id_lookup %>%
   filter(Year == 2016, type == 'county') %>%
   select(geoid, name)
 
-broadband <- broadband %>%
+broadband <- load_broadband %>%
   filter(tech == 'acfosw', type == 'county') %>%
   left_join(id_lookup, by = c('id' = 'geoid')) %>%
   filter(str_detect(name, ', WA')) %>%
@@ -25,14 +25,14 @@ broadband <- broadband %>%
   summarize(has_0 = sum(has_0), has_1 = sum(has_1), has_2 = sum(has_2), 
             has_3more = sum(has_3more))
 
-test_scores <- test_scores %>%
-  filter(County != 'Multiple', County != "", StudentGroupType == 'All', 
+test_scores <- load_test_scores %>%
+  filter(County != 'Multiple', County != "", 
          GradeLevel == '6th Grade' | GradeLevel == '7th Grade' | 
          GradeLevel == '8th Grade' | GradeLevel == '9th Grade' | 
          GradeLevel == '10th Grade' | GradeLevel == '11th Grade' | 
          GradeLevel == '12th Grade') %>% 
-  select(County, GradeLevel, PercentMetTestedOnly, PercentLevel1, PercentLevel2, 
-         PercentLevel3, PercentLevel4) %>%
+  select(County, GradeLevel, StudentGroupType, TestSubject, PercentMetTestedOnly,
+         PercentLevel1, PercentLevel2, PercentLevel3, PercentLevel4) %>%
   drop_na()
 
 county_population <- broadband %>% 
