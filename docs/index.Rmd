@@ -127,9 +127,9 @@ Education is fundamental to our growth whether itâs done in a classroom set
 
 
 ### Research Questions
-1. Does having limited broadband access have an impact on academic performance?
-2. Does the internet impact math performance differently compared to reading?
-3. Is there a connection between academic performance, urban, and rural areas?
+1. Does limited broadband access impact on test satisfactory levels?
+2. Is broadband access a factor in the different test subject performance?
+3. Does English as a second language students perform differently based on broadband speeds?
 
 ### The Dataset
 - **2011-2012 ED Facts Assessment of Reading**
