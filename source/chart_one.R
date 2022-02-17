@@ -45,16 +45,10 @@ county_avg_percent_met <- broadband_student_scores %>%
 
 
 # Create and store plots
-county_medium_table <- create_scatter(county_avg_percent_met, "percent_has_1_medium", create_speed_labels("medium"))
-plot(county_medium_table)
+medium_speed_diff <- create_scatter(county_avg_percent_met, "percent_has_1_medium", create_speed_labels("medium"))
 
-county_fast_table <- create_scatter(county_avg_percent_met, "percent_has_1_fast", create_speed_labels("fast"))
-plot(county_fast_table)
+fast_speed_diff <- create_scatter(county_avg_percent_met, "percent_has_1_fast", create_speed_labels("fast"))
 
 medium_access_diff <- create_scatter(county_avg_percent_met, "prop_1_2_medium", create_access_labels("medium"))
-plot(medium_access_diff)
-  
+
 fast_access_diff <- create_scatter(county_avg_percent_met, "prop_1_2_fast", create_access_labels("fast"))
-plot(fast_access_diff)
-
-
