@@ -5,8 +5,11 @@ title: "Broadband Effect on Education"
 output: html_document
 ---
 
-```{r setup, include=FALSE}
+```{r setup, include = FALSE}
+library("knitr")
 knitr::opts_chunk$set(echo = TRUE)
+source_file <- paste(getwd(), "/../source/", sep = "")
+source(paste(source_file, "chart_one.R", sep = ""))
 ```
 
 <!-- ## What is this file for? -->
@@ -193,6 +196,11 @@ No questions at this time.
 ## Agggregate Table
 
 ## Chart #1
+
+```{r chart_one, echo = FALSE}
+
+```
+
 
 ## Chart #2
 
