@@ -2,13 +2,12 @@
 #----------------------------------------------------------------------------#
 # These functions are used to access data sources ... 
 #----------------------------------------------------------------------------#
+lol <- getwd()
 library(tidyverse)
-
-setwd('~/info201/Clowny-Cloud-Fish/')
-
-load_broadband <- read.csv('./data/Area_Table_June2016.csv')
-load_id_lookup <- read.csv('./data/Geography_Lookup_Table.csv')
-load_test_scores <- read.csv('./data/Report_Card_Assessment_Data_2016-17_School_Year.csv')
+data_dir <- paste(getwd(), "/../data/", sep = "")
+load_broadband <- read.csv(paste(data_dir, "Area_Table_June2016.csv", sep = ""))
+load_id_lookup <- read.csv(paste(data_dir, "Geography_Lookup_Table.csv", sep = ""))
+load_test_scores <- read.csv(paste(data_dir, "Report_Card_Assessment_Data_2016-17_School_Year.csv", sep = ""))
 
 id_lookup <- load_id_lookup %>%
   filter(Year == 2016, type == 'county') %>%
