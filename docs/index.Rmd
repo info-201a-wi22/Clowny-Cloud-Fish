@@ -1,7 +1,7 @@
 ---
-title: "Broadband Effect on Education"
 author: "Daniel Lee, Hanna Lee, John Nguyen, Nick Vaughn"
 date: "2/15/2022"
+title: "Broadband Effect on Education"
 output: html_document
 ---
 
@@ -31,7 +31,7 @@ knitr::opts_chunk$set(echo = TRUE)
 <!-- msg <- data_access_test(" Morgan!") -->
 <!-- ``` -->
 
-<!-- > `r msg` Hope you have a good day!!  -->
+<!-- r msg` Hope you have a good day!!  -->
 
 <!-- ## ABOUT THIS FILE:  -->
 
@@ -52,6 +52,10 @@ knitr::opts_chunk$set(echo = TRUE)
 <!-- ``` -->
 
 <!-- Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot. -->
+
+# Report {.tabset .tabset-fade .tabset-pills}
+
+## Proposal
 
 ### Abstract
 We are concerned with inequity in students having broadband access because it may disadvantage many students as education relies more on technology. To address this concern, we plan to analyze multiple datasets on student state assessment performance in Washington and see if there is a correlation between their performance and broadband access.
@@ -183,3 +187,13 @@ School Connectivity. National Center for Education Statistics. (n.d.). Retrieved
 
 ### Appendix A:
 No questions at this time.
+
+## Summary Statistics
+
+## Agggregate Table
+
+## Chart #1
+
+## Chart #2
+
+## Chart #3 
