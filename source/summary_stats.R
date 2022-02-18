@@ -66,7 +66,3 @@ low_income_slow_percent_met <- function(data) {
   
 low_income_fast_percent_met(broadband_student_scores)
 low_income_slow_percent_met(broadband_student_scores)
-
-
-=======
->>>>>>> 5b775d4286d42693865e615c6ffab53aa5cfea3a
