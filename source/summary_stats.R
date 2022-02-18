@@ -26,7 +26,9 @@ library(tidyverse)
 
 slow_percent_met <- function(data) {
   data %>% 
-    
+    filter(percent_has_1_medium < 0.5) %>%
+    summarize(avg_met_tested = mean(PercentMetTestedOnly)) %>%
+    pull(avg_met_tested)
 }
   
 fast_percent_met <- function(data) {
@@ -44,3 +46,7 @@ more_percent_met <- function(data) {
     filter(percent_has_2_medium >= 0.5)
   return(mean(filtered$PercentMetTestedOnly))
 }
+<<<<<<< Updated upstream
+=======
+  
+>>>>>>> Stashed changes
