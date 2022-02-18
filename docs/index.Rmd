@@ -243,6 +243,13 @@ dfd
 
 ## Chart #2
 
+### <u>Middle School English Lanuage Leaners and No Broadband Access</u>
+
+```{r, no_broadband, echo = FALSE, fig.show="hold", out.width="70%"}
+data_1 <- filter_english_learner_students(test_scores)
+data_2 <- student_broadband_combine(data_1)
+data_3 <-
+
 <!-------------------------------------------------------------------------------------------------->
 
 ## Chart #3 
