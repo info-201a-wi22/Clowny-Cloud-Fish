@@ -46,7 +46,6 @@ more_percent_met <- function(data) {
     filter(percent_has_2_medium >= 0.5)
   return(mean(filtered$PercentMetTestedOnly))
 }
-<<<<<<< HEAD
 
 low_income_fast_percent_met <- function(data) {
   result <- data %>% 
@@ -63,6 +62,3 @@ low_income_slow_percent_met <- function(data) {
     pull()
   result
 }
-  
-low_income_fast_percent_met(broadband_student_scores)
-low_income_slow_percent_met(broadband_student_scores)
