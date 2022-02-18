@@ -1,3 +1,6 @@
+# Aggregate Table Script--------------------------------------------------------
+
+# Aggregate Table based on county
 county_aggregate_table <- function(data) {
   data %>% 
     group_by(County, percent_has_1_medium) %>% 

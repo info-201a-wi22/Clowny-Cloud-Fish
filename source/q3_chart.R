@@ -6,14 +6,18 @@
 
 
 # Filter test_scores for just English Language Learners
-filter_english_learner_students <- test_scores %>%
+filter_english_learner_students <- function(data_1) {
+  filter_data <- data_1 %>%
   group_by(County, GradeLevel) %>%
   filter(StudentGroupType == "English Language Learners") %>%
   select(County, GradeLevel, StudentGroupType, PercentMetTestedOnly)
+}
 
 # Join the broadband and test_scores datasets
-student_broadband_combine <- filter_english_learner_students %>%
+student_broadband_combine <- function(data_2) {
+  combine_data <- data_1 %>%
   left_join(broadband, by = c("County" = 'county'))
+}
 
 middle_student_broadband_25 <- student_broadband_combine %>%
   filter(speed == 25) %>%
