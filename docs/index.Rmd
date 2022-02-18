@@ -79,7 +79,7 @@ We are concerned with inequity in students having broadband access because it ma
 3. Accessibility
 
 ### Introduction
-Education is fundamental to our growth whether itâs done in a classroom setting or in our homes. As our society gravitates towards a technology-based empire, broadband must grow with our needs to prevent unbalanced progress. During the pandemic, this was highlighted when children were left to study at restaurants and parking lots with free Wi-Fi. The prevalent imbalance showcased the privilege of having expendable income for broadband and having access to reliable broadband. Our primary focus is on students and their academic progress in the year 2011-2012 and our broadband data is from 2016. We will analyze broadband access within the different geographic areas within the US and see if thereâs a correlation between student academic growth and broadband access.
+Education is fundamental to our growth whether it's done in a classroom setting or in our homes. As our society gravitates towards a technology-based empire, broadband must grow with our needs to prevent unbalanced progress. During the pandemic, this was highlighted when children were left to study at restaurants and parking lots with free Wi-Fi. The prevalent imbalance showcased the privilege of having expendable income for broadband and having access to reliable broadband. Our primary focus is on students and their academic status in the school year 2016-17, and our broadband data is from 2016. We will analyze broadband access within the different geographic areas within the US and see if there's a correlation between student academic growth and broadband access.
 
 ### Design Situation
 
@@ -87,14 +87,14 @@ Education is fundamental to our growth whether itâs done in a classroom set
 
   Education enables individuals to build more prosperous lives and societies to achieve economic prosperity. In the modern world, education is closely intertwined with the Internet. The Internet enhances the educational experience in innumerable ways: it provides a wealth of information, increases opportunities for learning, and provides powerful tools to support the learning experience (Internet Society, 2017). 	
 
-  However, the Internetâs educational benefits inherently create a disparity between students who have Internet access and those who do not. Not every student has equal access to the Internet. While an impressive 99 percent of US public schools have access to the Internet (NCES, n.d.), many developing nations struggle to provide even a traditional classroom education. In his book Outliers, author Malcolm Gladwell describes the biblically eponymous âMatthew Effectâ- advantages compound gains while disadvantages compound losses (Gwinn, 2008). In the same vein, students with Internet access will further their education, while those with minimal access will fall behind. This snowball effect can widen social and economic disparities amongst nations, social classes, and other groups.
+  However, the Internet's educational benefits inherently create a disparity between students who have Internet access and those who do not. Not every student has equal access to the Internet. While an impressive 99 percent of US public schools have access to the Internet (NCES, n.d.), many developing nations struggle to provide even a traditional classroom education. In his book Outliers, author Malcolm Gladwell describes the biblically eponymous "Matthew Effect"- advantages compound gains while disadvantages compound losses (Gwinn, 2008). In the same vein, students with Internet access will further their education, while those with minimal access will fall behind. This snowball effect can widen social and economic disparities amongst nations, social classes, and other groups.
 
 
 - **Human Values:**:
 
   + *Equality*:
 
-    The Internetâs disparate impact on education is fundamentally a matter of equality. Varying levels of Internet access inherently create unequal learning environments, which results in unequal future opportunities. The main goal is to bridge this educational gap.
+    The Internet's disparate impact on education is fundamentally a matter of equality. Varying levels of Internet access inherently create unequal learning environments, which results in unequal future opportunities. The main goal is to bridge this educational gap.
 
   + *Opportunity / Well-being*:
 
@@ -121,7 +121,7 @@ Education is fundamental to our growth whether itâs done in a classroom set
 
   + *Underprivileged Students*: Internet access will improve their quality of education and provide better future opportunities.
 
-  + *Society*: If Internet access bolsters more studentsâ education, then economic output will increase in the long run.
+  + *Society*: If Internet access bolsters more students' education, then economic output will increase in the long run.
 
   + *Families*: They would be able to see one their own members receive quality education.
 
@@ -243,11 +243,21 @@ dfd
 
 ## Chart #2
 
+<<<<<<< HEAD
 ### <u>Broadband Access and Education</u>
 
 ```{r, access, echo = FALSE, fig.show="hold", out.width="70%"}
 
 ```
+=======
+### <u>Middle School English Lanuage Leaners and No Broadband Access</u>
+
+```{r, no_broadband, echo = FALSE, fig.show="hold", out.width="70%"}
+data_1 <- filter_english_learner_students(test_scores)
+data_2 <- student_broadband_combine(data_1)
+data_3 <-
+
+>>>>>>> ab72f479002b121ca2496251d74ee3777416016b
 <!-------------------------------------------------------------------------------------------------->
 
 ## Chart #3 
