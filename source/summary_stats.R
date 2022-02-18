@@ -1,5 +1,4 @@
-
-# Aggregate Table based on county
+# Summary Information Script----------------------------------------------------
 
 library(tidyverse)
 
@@ -15,7 +14,7 @@ create_list <- function(data) {
 }
 
 slow_percent_met <- function(data) {
-  data %>% 
+  data %>%
     filter(percent_has_1_medium < 0.5) %>%
     summarize(avg_met_tested = mean(PercentMetTestedOnly)) %>%
     pull(avg_met_tested)
@@ -25,7 +24,8 @@ fast_percent_met <- function(data) {
   filter_greater_half <- data %>%
     filter(percent_has_1_medium > .5) %>%
     summarise(avg_score = mean(PercentMetTestedOnly)) %>%
-    pull(avg_score)
+    pull()
+  filter_greater_half
 }
   
 less_percent_met <- function(data) {
@@ -41,17 +41,17 @@ more_percent_met <- function(data) {
 }
 
 low_income_fast_percent_met <- function(data) {
-  result <- data %>% 
-    filter(StudentGroupType == "Low Income" & percent_has_1_medium > 0.5) %>% 
-    summarize(mean = mean(PercentMetTestedOnly)) %>% 
+  result <- data %>%
+    filter(StudentGroupType == "Low Income" & percent_has_1_medium > 0.5) %>%
+    summarize(mean = mean(PercentMetTestedOnly)) %>%
     pull()
   result
 }
 
 low_income_slow_percent_met <- function(data) {
-  result <- data %>% 
-    filter(StudentGroupType == "Low Income" & percent_has_1_medium < 0.5) %>% 
-    summarize(mean = mean(PercentMetTestedOnly)) %>% 
+  result <- data %>%
+    filter(StudentGroupType == "Low Income" & percent_has_1_medium < 0.5) %>%
+    summarize(mean = mean(PercentMetTestedOnly)) %>%
     pull()
   result
 }
