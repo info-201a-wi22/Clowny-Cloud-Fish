@@ -3,6 +3,8 @@
 # These functions are used to access data sources ...
 #----------------------------------------------------------------------------#
 
+library(tidyverse)
+
 load_broadband <- read.csv("../data/Area_Table_June2016.csv")
 load_id_lookup <- read.csv("../data/Geography_Lookup_Table.csv")
 load_test_scores <- read.csv("../data/Report_Card_Assessment_Data_2016-17_School_Year.csv")
