@@ -243,6 +243,11 @@ dfd
 
 ## Chart #2
 
+### <u>Broadband Access and Education</u>
+
+```{r, access, echo = FALSE, fig.show="hold", out.width="70%"}
+
+```
 <!-------------------------------------------------------------------------------------------------->
 
 ## Chart #3 
