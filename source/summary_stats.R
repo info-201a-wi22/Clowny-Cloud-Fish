@@ -32,7 +32,10 @@ slow_percent_met <- function(data) {
 }
   
 fast_percent_met <- function(data) {
-  
+  filter_greater_half <- data %>%
+    filter(percent_has_1_medium > .5) %>%
+    summarise(avg_score = mean(PercentMetTestedOnly)) %>%
+    pull(avg_score)
 }
   
 less_percent_met <- function(data) {
