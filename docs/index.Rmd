@@ -7,17 +7,19 @@ output: html_document
 <!-- rm(list = ls()) -->
 
 ```{r, setup, include = FALSE}
+library("tidyverse")
 library("knitr")
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
 knitr::opts_knit$set(root.dir = "../source")
 ```
 
-```{r source_data, include = FALSE}
+```{r, sources, include = FALSE}
 source("data_access.R")
+# <!-- source("Summary Statistics") -->
+# <!-- source("Aggregate Table") -->
 source("chart_one.R")
-```
-
-```{r source_charts, include = FALSE}
+# <!-- source("Chart #2") -->
+# <!-- source("Chart #3") -->
 ```
 
 <!-- ## What is this file for? -->
@@ -199,17 +201,42 @@ School Connectivity. National Center for Education Statistics. (n.d.). Retrieved
 ### Appendix A:
 No questions at this time.
 
+<!-------------------------------------------------------------------------------------------------->
+
 ## Summary Statistics
+
+<!-------------------------------------------------------------------------------------------------->
+
 
 ## Agggregate Table
 
+<!-------------------------------------------------------------------------------------------------->
+
+
 ## Chart #1
 
-```{r chart_one, echo = FALSE}
-
+```{r, medium_speed, echo = FALSE}
+data <- summarize_data(broadband_student_scores)
+plot(create_scatter(data, "percent_has_1_medium", create_speed_labels("medium")))
 ```
 
 
+```{r, fast_speed, echo = FALSE}
+plot(create_scatter(data, "percent_has_1_fast", create_speed_labels("fast")))
+```
+
+```{r, medium_access, echo = FALSE}
+plot(create_scatter(data, "prop_1_2_medium", create_access_labels("medium")))
+```
+
+```{r, fast_access, echo = FALSE}
+plot(create_scatter(data, "prop_1_2_fast", create_access_labels("fast")))
+```
+
+<!-------------------------------------------------------------------------------------------------->
+
 ## Chart #2
+
+<!-------------------------------------------------------------------------------------------------->
 
 ## Chart #3 
