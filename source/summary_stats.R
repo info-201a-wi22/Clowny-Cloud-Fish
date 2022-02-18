@@ -1,27 +1,6 @@
 
 # Aggregate Table based on county
 
-
-# 1) lowest Average Score
-
-# average score of counties with medium_has_1 less than 0.5
-
-# 2) Fastest Average Score
-
-# average score of counties with medium_has_1 more than 0.5 
-
-# 3) Average score of counties where majority population doesn't have multiple 
-# providers of medium speed internet
-
-# 4) Average score of counties where majority population has multiple 
-# providers of medium speed internet
-
-# average score of percent_has_more_2_fast
-
-# 5) Low Income with medium_has_1 more than 0.5
-
-# 6) Low Income with medium_has_1 less than 0.5 
-
 library(tidyverse)
 
 create_list <- function(data) {
