@@ -23,7 +23,7 @@ slow_percent_met <- function(data) {
   
 fast_percent_met <- function(data) {
   filter_greater_half <- data %>%
-    filter(percent_has_1_medium > .5) %>%
+    filter(percent_has_1_medium >= 0.5) %>%
     summarise(avg_score = mean(PercentMetTestedOnly)) %>%
     pull(avg_score)
 }
@@ -42,7 +42,7 @@ more_percent_met <- function(data) {
 
 low_income_fast_percent_met <- function(data) {
   result <- data %>% 
-    filter(StudentGroupType == "Low Income" & percent_has_1_medium > 0.5) %>% 
+    filter(StudentGroupType == "Low Income" & percent_has_1_medium >= 0.5) %>% 
     summarize(mean = mean(PercentMetTestedOnly)) %>% 
     pull()
   result
