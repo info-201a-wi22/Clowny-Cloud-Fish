@@ -4,26 +4,6 @@
 
 # Utilize broadband and testscores database to answer the question.
 
-install.packages("patchwork")
-install.packages("ggpubr")
-library(ggpubr)
-library("patchwork")
-library(plotly)
-library(ggplot2)
-
-# Clean working environment
-rm(list = ls())
-
-# Set working directory
-setwd("~/Documents/INFO_201/Clowny-Cloud-Fish/")
-getwd()
-
-# Grab loaded functions from data_access
-source("./source/data_access.R")
-
-# View the 2 datasets
-View(test_scores)
-View(broadband)
 
 # Filter test_scores for just English Language Learners
 filter_english_learner_students <- test_scores %>%
