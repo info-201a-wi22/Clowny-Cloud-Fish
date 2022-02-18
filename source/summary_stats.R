@@ -43,7 +43,10 @@ slow_percent_met <- function(data) {
 }
   
 fast_percent_met <- function(data) {
-  
+  filter_greater_half <- data %>%
+    filter(percent_has_1_medium > .5) %>%
+    summarise(avg_score = mean(PercentMetTestedOnly)) %>%
+    pull(avg_score)
 }
   
 less_percent_met <- function(data) {
@@ -57,7 +60,6 @@ more_percent_met <- function(data) {
     filter(percent_has_2_medium >= 0.5)
   return(mean(filtered$PercentMetTestedOnly))
 }
-<<<<<<< HEAD
 
 low_income_fast_percent_met <- function(data) {
   result <- data %>% 
@@ -74,7 +76,10 @@ low_income_slow_percent_met <- function(data) {
     pull()
   result
 }
+<<<<<<< HEAD
 
 
 =======
 >>>>>>> 5b775d4286d42693865e615c6ffab53aa5cfea3a
+=======
+>>>>>>> 9640e25585b678d444443699402bfdf2ed251ba6
