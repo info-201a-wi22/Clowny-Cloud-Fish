@@ -24,6 +24,17 @@
 
 library(tidyverse)
 
+create_list <- function(data) {
+  stats_list <- list()
+  stats_list$slow_percent_met <- slow_percent_met(data)
+  stats_list$fast_percent_met <- fast_percent_met(data)
+  stats_list$less_percent_met <- less_percent_met(data)
+  stats_list$more_percent_met <- more_percent_met(data)
+  stats_list$low_income_fast_percent_met <- low_income_fast_percent_met(data)
+  stats_list$low_income_slow_percent_met <- low_income_slow_percent_met(data)
+  stats_list
+}
+
 slow_percent_met <- function(data) {
   data %>% 
     filter(percent_has_1_medium < 0.5) %>%
@@ -63,9 +74,6 @@ low_income_slow_percent_met <- function(data) {
     pull()
   result
 }
-  
-low_income_fast_percent_met(broadband_student_scores)
-low_income_slow_percent_met(broadband_student_scores)
 
 
 =======
