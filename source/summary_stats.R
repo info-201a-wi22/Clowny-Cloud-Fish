@@ -55,10 +55,3 @@ low_income_slow_percent_met <- function(data) {
     pull()
   result
 }
-<<<<<<< HEAD
-
-
-=======
->>>>>>> 5b775d4286d42693865e615c6ffab53aa5cfea3a
-=======
->>>>>>> 9640e25585b678d444443699402bfdf2ed251ba6
