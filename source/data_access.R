@@ -4,7 +4,8 @@
 #----------------------------------------------------------------------------#
 library(tidyverse)
 
-setwd('~/info201/Clowny-Cloud-Fish/')
+setwd('~/Documents/INFO_201/Clowny-Cloud-Fish/')
+getwd()
 
 load_broadband <- read.csv('./data/Area_Table_June2016.csv')
 load_id_lookup <- read.csv('./data/Geography_Lookup_Table.csv')
