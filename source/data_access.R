@@ -1,6 +1,6 @@
 # Example: Project Data Access Functions  ----
 #----------------------------------------------------------------------------#
-# These functions are used to access data sources ... 
+# These functions are used to access data sources ...
 #----------------------------------------------------------------------------#
 
 load_broadband <- read.csv("../data/Area_Table_June2016.csv")
@@ -19,20 +19,20 @@ broadband <- load_broadband %>%
   mutate(county = str_sub(county, end = -12)) %>%
   select(county, speed, has_0, has_1, has_2, has_3more) %>%
   group_by(county, speed) %>%
-  summarize(has_0 = sum(has_0), has_1 = sum(has_1), has_2 = sum(has_2), 
+  summarize(has_0 = sum(has_0), has_1 = sum(has_1), has_2 = sum(has_2),
             has_3more = sum(has_3more))
 
 test_scores <- load_test_scores %>%
-  filter(County != 'Multiple', County != "", 
-         GradeLevel == '6th Grade' | GradeLevel == '7th Grade' | 
-         GradeLevel == '8th Grade' | GradeLevel == '9th Grade' | 
-         GradeLevel == '10th Grade' | GradeLevel == '11th Grade' | 
-         GradeLevel == '12th Grade') %>% 
+  filter(County != 'Multiple', County != "",
+         GradeLevel == '6th Grade' | GradeLevel == '7th Grade' |
+         GradeLevel == '8th Grade' | GradeLevel == '9th Grade' |
+         GradeLevel == '10th Grade' | GradeLevel == '11th Grade' |
+         GradeLevel == '12th Grade') %>%
   select(County, GradeLevel, StudentGroupType, TestSubject, PercentMetTestedOnly,
          PercentLevel1, PercentLevel2, PercentLevel3, PercentLevel4) %>%
   drop_na()
 
-county_population <- broadband %>% 
+county_population <- broadband %>%
   distinct(county, .keep_all = TRUE) %>%
   group_by(county) %>%
   summarize(population = has_0 + has_1 + has_2 + has_3more)
@@ -44,25 +44,25 @@ broadband_speed_summary <- broadband %>%
   mutate(percent_has_2 = (has_2 + has_3more) / population) %>%
   summarize(percent_has_1, percent_has_2)
 
-slow_broadband <- broadband_speed_summary %>% 
+slow_broadband <- broadband_speed_summary %>%
   filter(speed == 25) %>%
   rename(percent_has_1_slow = percent_has_1) %>%
   rename(percent_has_2_slow = percent_has_2) %>%
   select(county, percent_has_1_slow, percent_has_2_slow)
 
-medium_broadband <- broadband_speed_summary %>% 
+medium_broadband <- broadband_speed_summary %>%
   filter(speed == 100) %>%
   rename(percent_has_1_medium = percent_has_1) %>%
   rename(percent_has_2_medium = percent_has_2) %>%
   select(county, percent_has_1_medium, percent_has_2_medium)
 
-fast_broadband <- broadband_speed_summary %>% 
+fast_broadband <- broadband_speed_summary %>%
   filter(speed == 250) %>%
   rename(percent_has_1_fast = percent_has_1) %>%
   rename(percent_has_2_fast = percent_has_2) %>%
   select(county, percent_has_1_fast, percent_has_2_fast)
 
-broadband_student_scores <- test_scores %>% 
+broadband_student_scores <- test_scores %>%
   left_join(slow_broadband, by = c('County' = 'county')) %>%
   left_join(medium_broadband, by = c('County' = 'county')) %>%
   left_join(fast_broadband, by = c('County' = 'county'))
