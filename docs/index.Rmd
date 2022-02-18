@@ -1,12 +1,25 @@
 ---
-title: "Broadband Effect on Education"
 author: "Daniel Lee, Hanna Lee, John Nguyen, Nick Vaughn"
 date: "2/15/2022"
+title: "Broadband Effect on Education"
 output: html_document
 ---
+<!-- rm(list = ls()) -->
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+```{r, setup, include = FALSE}
+library("tidyverse")
+library("knitr")
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
+knitr::opts_knit$set(root.dir = "../source")
+```
+
+```{r, sources, include = FALSE}
+source("data_access.R")
+# <!-- source("Summary Statistics") -->
+# <!-- source("Aggregate Table") -->
+source("chart_one.R")
+# <!-- source("Chart #2") -->
+# <!-- source("Chart #3") -->
 ```
 
 <!-- ## What is this file for? -->
@@ -31,7 +44,7 @@ knitr::opts_chunk$set(echo = TRUE)
 <!-- msg <- data_access_test(" Morgan!") -->
 <!-- ``` -->
 
-<!-- > `r msg` Hope you have a good day!!  -->
+<!-- r msg` Hope you have a good day!!  -->
 
 <!-- ## ABOUT THIS FILE:  -->
 
@@ -52,6 +65,10 @@ knitr::opts_chunk$set(echo = TRUE)
 <!-- ``` -->
 
 <!-- Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot. -->
+
+# Report {.tabset .tabset-fade .tabset-pills}
+
+## Proposal
 
 ### Abstract
 We are concerned with inequity in students having broadband access because it may disadvantage many students as education relies more on technology. To address this concern, we plan to analyze multiple datasets on student state assessment performance in Washington and see if there is a correlation between their performance and broadband access.
@@ -183,3 +200,43 @@ School Connectivity. National Center for Education Statistics. (n.d.). Retrieved
 
 ### Appendix A:
 No questions at this time.
+
+<!-------------------------------------------------------------------------------------------------->
+
+## Summary Statistics
+
+<!-------------------------------------------------------------------------------------------------->
+
+
+## Agggregate Table
+
+<!-------------------------------------------------------------------------------------------------->
+
+
+## Chart #1
+
+```{r, medium_speed, echo = FALSE}
+data <- summarize_data(broadband_student_scores)
+plot(create_scatter(data, "percent_has_1_medium", create_speed_labels("medium")))
+```
+
+
+```{r, fast_speed, echo = FALSE}
+plot(create_scatter(data, "percent_has_1_fast", create_speed_labels("fast")))
+```
+
+```{r, medium_access, echo = FALSE}
+plot(create_scatter(data, "prop_1_2_medium", create_access_labels("medium")))
+```
+
+```{r, fast_access, echo = FALSE}
+plot(create_scatter(data, "prop_1_2_fast", create_access_labels("fast")))
+```
+
+<!-------------------------------------------------------------------------------------------------->
+
+## Chart #2
+
+<!-------------------------------------------------------------------------------------------------->
+
+## Chart #3 
