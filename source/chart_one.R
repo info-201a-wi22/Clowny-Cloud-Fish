@@ -1,7 +1,3 @@
-source("~/Documents/Info201code/Clowny-Cloud-Fish/source/data_access.R")
-
-# rm(list = ls())
-
 # Does having medium speed Internet access affect performance?
 
 # Function to create scatter plot
@@ -35,20 +31,12 @@ create_access_labels <- function(speed) {
 }
   
 # Grouped by County (Average Percent Met Standard)
-county_avg_percent_met <- broadband_student_scores %>%
+summarize_data <- function(data) {
+  filtered_data <- data %>%
   filter(str_detect(GradeLevel, "9|10|11|12")) %>% 
   mutate(prop_1_2_medium = percent_has_2_medium / percent_has_1_medium,
          prop_1_2_fast = percent_has_2_fast / percent_has_1_fast) %>% 
   group_by(County, percent_has_1_medium, percent_has_1_fast, prop_1_2_medium, prop_1_2_fast) %>% 
   summarise(PercentMetTestedOnly = mean(PercentMetTestedOnly, na.rm = T)) %>% 
   replace_na(list(prop_1_2_medium = 0, prop_1_2_fast = 0))
-
-
-# Create and store plots
-medium_speed_diff <- create_scatter(county_avg_percent_met, "percent_has_1_medium", create_speed_labels("medium"))
-
-fast_speed_diff <- create_scatter(county_avg_percent_met, "percent_has_1_fast", create_speed_labels("fast"))
-
-medium_access_diff <- create_scatter(county_avg_percent_met, "prop_1_2_medium", create_access_labels("medium"))
-
-fast_access_diff <- create_scatter(county_avg_percent_met, "prop_1_2_fast", create_access_labels("fast"))
+}

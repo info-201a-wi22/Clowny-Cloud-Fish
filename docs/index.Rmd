@@ -4,12 +4,20 @@ date: "2/15/2022"
 title: "Broadband Effect on Education"
 output: html_document
 ---
+<!-- rm(list = ls()) -->
 
-```{r setup, include = FALSE}
+```{r, setup, include = FALSE}
 library("knitr")
 knitr::opts_chunk$set(echo = TRUE)
-source_file <- paste(getwd(), "/../source/", sep = "")
-source(paste(source_file, "chart_one.R", sep = ""))
+knitr::opts_knit$set(root.dir = "../source")
+```
+
+```{r source_data, include = FALSE}
+source("data_access.R")
+source("chart_one.R")
+```
+
+```{r source_charts, include = FALSE}
 ```
 
 <!-- ## What is this file for? -->

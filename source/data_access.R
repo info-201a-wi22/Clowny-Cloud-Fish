@@ -4,9 +4,9 @@
 #----------------------------------------------------------------------------#
 library(tidyverse)
 
-load_broadband <- read.csv("./data/Area_Table_June2016.csv")
-load_id_lookup <- read.csv("./Geography_Lookup_Table.csv")
-load_test_scores <- read.csv("./Report_Card_Assessment_Data_2016-17_School_Year.csv")
+load_broadband <- read.csv("../data/Area_Table_June2016.csv")
+load_id_lookup <- read.csv("../data/Geography_Lookup_Table.csv")
+load_test_scores <- read.csv("../data/Report_Card_Assessment_Data_2016-17_School_Year.csv")
 
 id_lookup <- load_id_lookup %>%
   filter(Year == 2016, type == 'county') %>%
