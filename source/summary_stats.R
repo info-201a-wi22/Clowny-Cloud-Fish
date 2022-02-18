@@ -46,7 +46,3 @@ more_percent_met <- function(data) {
     filter(percent_has_2_medium >= 0.5)
   return(mean(filtered$PercentMetTestedOnly))
 }
-<<<<<<< Updated upstream
-=======
-  
->>>>>>> Stashed changes
