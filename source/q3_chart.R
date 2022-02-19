@@ -38,8 +38,7 @@ ms_0 <- function(data_3) {
 
     labs(
       title = "State Test Satisfactory % vs Grade Level Based on County",
-      subtitle = "(English language learners grades 6 - 8 \n with 0 providers to
-                  25 mbps)",
+      subtitle = "(English language learners grades 6 - 8 \n with 0 providers to 25 mbps)",
       x = "County",
       y = "% of Who Scored Satisfactory",
     ) +
@@ -47,8 +46,6 @@ ms_0 <- function(data_3) {
     facet_grid(rows = vars(GradeLevel)) +
 
     guides(fill = guide_legend(title = "Has 0 \n Broadband \n Providers")) +
-
-    scale_fill_manual(values = c("#00AFBB")) +
 
     theme(axis.text.x = element_text(angle = 90))
 }
