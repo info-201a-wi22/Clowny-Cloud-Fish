@@ -172,36 +172,6 @@ pre code {
 
 
 <!-- rm(list = ls()) -->
-<!-- ## What is this file for? -->
-<!-- * This file will eventually become your project report for **P02: Exploratory Data Analysis**. Specifically, you will write rmarkdown to report your exploratory data analysis. -->
-<!-- * Please see Canvas for more details. -->
-<!-- ## ACCESSING THE /source DIRECTORY -->
-<!-- ### Example 1: Source some code and run a function -->
-<!-- ```{r} -->
-<!-- # Example 1: Note relative path, which can be read: Up one -->
-<!-- # directory(..), down into source (/source), and  -->
-<!-- # then "source" an R file (data_access.R) -->
-<!-- source("../source/data_access.R") -->
-<!-- data_access_test() -->
-<!-- ``` -->
-<!-- ### Example 2: Initialize a variable and then use it -->
-<!-- ```{r} -->
-<!-- # Example 1: This function was "sourced" above -->
-<!-- msg <- data_access_test(" Morgan!") -->
-<!-- ``` -->
-<!-- r msg` Hope you have a good day!!  -->
-<!-- ## ABOUT THIS FILE:  -->
-<!-- This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>. -->
-<!-- When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this: -->
-<!-- ```{r cars} -->
-<!-- summary(cars) -->
-<!-- ``` -->
-<!-- ## Including Plots -->
-<!-- You can also embed plots, for example: -->
-<!-- ```{r pressure, echo=FALSE} -->
-<!-- plot(pressure) -->
-<!-- ``` -->
-<!-- Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot. -->
 <div id="report" class="section level1 tabset tabset-fade tabset-pills">
 <h1 class="tabset tabset-fade tabset-pills">Report</h1>
 <div id="proposal" class="section level2">
@@ -649,7 +619,9 @@ Due to language barrier, we wanted to observe how those students’ academics we
 <div style="background-color:#F2EEED;padding:5px;">
 <span style="font-size:150%"><b><u>Observations and Insights</u></b></span> <br><br>
 <p style="text-indent:40px;">
-For easier analysis, I broken down the data between middle and high school students. From there, we see satisfactory percentage in each county based on having a broadband provider. With middle school students, the correlation between broadband access and having a satisfactory grade on the state test is good. We do have outlier in some counties, and if we discount those, we do see the upticks in counties that broadband access vs. those who do not have access. In particular, The peaks happen in larger counties therefore, we have made assumptions.
+<p>For easier analysis, the data is broken down between middle and high school students. From there, we see satisfactory percentage in each county based on having a broadband provider. With middle school students, the correlation between broadband access and having a satisfactory grade on the state test is negligible. We do have outliers in some counties, and if we discount those, we do see slight upticks in counties that have broadband access vs. those who do not have access. Not surprisingly, King county had one of the highest maximum satisfactory percentages.</p>
+<p>High school data was difficult to analyze because 9th and 12th grade barely had data. The main focus was on 10th and 11th grade. The dataset was not as dense, so it was difficult to have firm conclusions about the relationship between having broadband and test scores. Over all, 10th graders had a stronger performance, with smaller ranges in percentages, but we can not confidently say that was due to broadband access. Ultimately, we need a larger dataset to come to a clearer conclusion for high schoolers.</p>
+The impact of broadband was shown by the color change between 0 providers to 1 provider. If there was a color change, we would compare the 2 areas. If there was an increase in the amount of people that had providers, we would see that there was a stronger broadband presence in the area and the satisfactory percentage would be evaluated.
 </p>
 </div>
 <!-------------------------------------------------------------------------------------------------->
