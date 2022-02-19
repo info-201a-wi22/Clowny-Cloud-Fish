@@ -299,7 +299,7 @@ Our chart, however, tells us otherwise. With the datasets that we have used, we 
 
 ```{r, ms_broadband, echo = FALSE, fig.show="hold", out.width="70%"}
 data_1 <- filter_english_learners(test_scores)
-vdata_2 <- student_broadband_combine(data_1)
+data_2 <- student_broadband_combine(data_1)
 data_3 <- ms_broadband_25(data_2)
 plot(ms_0(data_3))
 plot(ms_1(data_3))
