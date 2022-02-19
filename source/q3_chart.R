@@ -32,7 +32,7 @@ high_student_broadband_25 <- function(data_4) {
          GradeLevel == "11th Grade" | GradeLevel == "12th Grade")
 }
 
-ms_0 <- function(data_3, num_connect) {
+ms_0 <- function(data_3) {
   ggplot(data_3) +
     geom_boxplot(aes(x = County, y = PercentMetTestedOnly, fill = has_0)) +
 
@@ -53,7 +53,7 @@ ms_0 <- function(data_3, num_connect) {
     theme(axis.text.x = element_text(angle = 90))
 }
 
-ms_1 <- function(data_3, num_connect) {
+ms_1 <- function(data_3) {
     ggplot(data_3) +
     geom_boxplot(aes(x = County, y = PercentMetTestedOnly, fill = has_1)) +
 
