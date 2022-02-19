@@ -15,8 +15,8 @@ knitr::opts_knit$set(root.dir = "../source")
 
 ```{r, sources, include = FALSE}
 source("data_access.R")
-# <!-- source("Summary Statistics") -->
-# <!-- source("Aggregate Table") -->
+source("summary_stats.R")
+source("aggregate_table.R")
 source("q1_chart.R")
 source("q2_chart.R")
 source("q3_chart.R")
@@ -204,12 +204,32 @@ No questions at this time.
 
 ## Summary Statistics
 
-There 
-
+```{r, summary_stats, echo = FALSE}
+summary_stats <- create_list(broadband_student_scores)
+```
+<br>
+<p style="font-size:17px">
+Below are a few summary statistics from our dataset.<br>
+Medium Internet speed is considered to be at least 100 Mbps.
+<br><br>
+<p style="font-size:17px;background-color:#F2EEED;padding:5px;">
+<b>1)</b> The mean proportion of students who met test standards in counties where the majority of the population have / don’t have at least medium Internet speed are <b>`r summary_stats$fast_percent_met`</b> and <b>`r summary_stats$slow_percent_met`</b> respectively.</p>
+<br><br>
+<p style="font-size:17px;background-color:#F2EEED;padding:5px;">
+<b>2)</b> The mean proportion of students who met test standards in counties where the majority of the population have / don’t have at least two points of Internet access and medium Internet speed are <b>`r summary_stats$more_percent_met`</b> and <b>`r summary_stats$less_percent_met`</b> respectively.</p>
+<br><br>
+<p style="font-size:17px;background-color:#F2EEED;padding:5px;">
+<b>3)</b> The mean proportion of low income students who met test standards in counties where the majority of the population have / don’t have at least medium Internet speed are <b>`r summary_stats$low_income_fast_percent_met`</b> and <b>`r summary_stats$low_income_slow_percent_met`</b> respectively.</p>
 <!-------------------------------------------------------------------------------------------------->
 
-
 ## Agggregate Table
+```{r, aggregate_table, echo = FALSE}
+kable(county_aggregate_table(broadband_student_scores))
+```
+<br>
+<p style="background-color:#F2EEED;padding:5px;text-indent:40px;font-size:17px;">
+This is an aggregate table that shows by Washington counties, <i><b>1)</b> the population proportion with at least medium Internet speed (100 Mbps)</i> and <i><b>2)</b> the mean proportion of students who met test standards</i>. If you are a Washington resident, you may take interest in noting the different statistics for different counties. The table gives a quick look at the correlation between the two variables, and potentially the impact of Internet speed on education. You may notice from the first row that everyone having at least medium Internet speed does not necessarily guarantee high proportions of educational success.
+</p>
 
 <!-------------------------------------------------------------------------------------------------->
 
@@ -218,27 +238,37 @@ There
 
 ### <u>Speed and Education</u>
 
-```{r, speed, echo = FALSE, fig.show="hold", out.width="70%"}
+<br>
+```{r, speed, echo = FALSE, fig.show="hold", out.width="50%"}
 data <- summarize_data(broadband_student_scores)
 plot(create_scatter(data, "percent_has_1_medium", create_speed_labels("medium")))
 plot(create_scatter(data, "percent_has_1_fast", create_speed_labels("fast")))
 ```
-
-```
-
-```
+<br>
+<div style="background-color:#F2EEED;padding:5px;">
+<p style="text-indent:40px;font-size:17px;">
+  These scatter plots attempt to roughly illustrate the impact that Internet speed has on the quality of education. Specifically, it measures the correlation between <i><b>1)</b> the population proportion of each county that has at least medium (100Mbps)/ fast level (250Mbps) Internet speed</i> to <i><b>2)</b> the mean proportion of high school students who met test standards</i>. Most counties seem to have a high population proportion with at least medium Internet access, while most have either a high or low population proportion with at least fast Internet access. </p>
+<p style="text-indent:40px;font-size:17px;">
+  Both graphs show a slightly negatively sloped linear regression line, which would indicate that the higher the population proportion with medium / fast Internet speed, the less students meet the test standards. This can loosely imply that better Internet speed does not result in better education. However, correlation does not imply causation, and so further tests would be required. Moreover, if you remove a couple of outliers towards the top left of the graph, the regression line would probably be positively sloped. </p>
+</div>
+<br>
+<br>
 
 ### <u>Access Points and Education</u>
 
-```{r, access, echo = FALSE, fig.show="hold", out.width="70%"}
+```{r, access, echo = FALSE, fig.show="hold", out.width="50%"}
 plot(create_scatter(data, "prop_1_2_medium", create_access_labels("medium")))
 plot(create_scatter(data, "prop_1_2_fast", create_access_labels("fast")))
 ```
-```
-dfd
-```
+<br>
+<br>
+<div style="background-color:#F2EEED;padding:5px;">
+<p style="text-indent:40px;font-size:17px;">
+These scatter plots attempt to roughly illustrate the impact that the number of Internet access points has on the quality of education. Specifically, it measures the correlation between <i><b>1)</b> the population proportion of each county that has at least two access points (relative to one)</i> to <i><b>2)</b> the mean proportion of high school students who met test standards</i>. Each graph takes into consideration two different Internet speeds, medium and fast. Most counties seem to have a population proportion with at least two access points (relative to one) swinging between 0.3 and 0.7. </p>
 
-
+<p style="text-indent:40px;font-size:17px;">
+Both graphs show a slightly negatively sloped linear regression line, which would indicate that the higher the population proportion with at least two access points (relative to one), the less students meet test standards. This can loosely imply that more Internet access points does not result in better education. However, correlation does not imply causation, and so further tests would be required. Moreover, if you remove some points, the graph appears it could have a positively sloped regression line.
+</p></div>
 <!-------------------------------------------------------------------------------------------------->
 
 ## Chart #2
@@ -252,18 +282,18 @@ generate_plot(data)
 
 
 #### Purpose
-One of the reasons why we wanted to conduct this research was to determine the potential effects of broadband access on student academic performance. 
-This chart shows the correlation between the percentage of students who have access to acceptable broadband and the percentage of those students who meet testing standards. 
+One of the reasons why we wanted to conduct this research was to determine the potential effects of broadband access on student academic performance.
+This chart shows the correlation between the percentage of students who have access to acceptable broadband and the percentage of those students who meet testing standards.
 
 
 #### Observations and Insights
-Based on our chart, there seems to be a negative correlation between broadband access and student academic performance. 
-We anticipated higher percentages of broadband access to correlate with higher percentage of students meeting testing standards. 
-Our chart, however, tells us otherwise. With the datasets that we have used, we are unable to conclude whether or not there is correlation between broadband access and student performance. 
+Based on our chart, there seems to be a negative correlation between broadband access and student academic performance.
+We anticipated higher percentages of broadband access to correlate with higher percentage of students meeting testing standards.
+Our chart, however, tells us otherwise. With the datasets that we have used, we are unable to conclude whether or not there is correlation between broadband access and student performance.
 
 <!-------------------------------------------------------------------------------------------------->
 
-## Chart #3 
+## Chart #3
 
 ### <u>Middle School English Lanuage Leaners and 0/1 Broadband Access</u>
 
@@ -275,10 +305,6 @@ plot(ms_0(data_3))
 plot(ms_1(data_3))
 ```
 
-```
-
-```
-
 ### <u>Middle School English Lanuage Leaners and 0/1 Broadband Access</u>
 
 ```{r, hs_broadband, echo = FALSE, fig.show="hold", out.width="70%"}
@@ -287,5 +313,5 @@ plot(hs_0(data_4))
 plot(hs_1(data_4))
 ```
 #### Purpose
-
+We wanted to observe the 
 #### Observations and Insights
