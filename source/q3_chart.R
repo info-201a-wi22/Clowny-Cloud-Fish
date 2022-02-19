@@ -22,7 +22,8 @@ student_broadband_combine <- function(data_2) {
 middle_student_broadband_25 <- student_broadband_combine %>%
   filter(speed == 25) %>%
   filter(GradeLevel == "6th Grade" | GradeLevel == "7th Grade" | 
-         GradeLevel == "8th Grade")
+         GradeLevel == "8th Grade") %>%
+  
 
 high_student_broadband_25 <- student_broadband_combine %>%
   filter(speed == 25) %>%
