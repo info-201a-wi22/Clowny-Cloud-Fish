@@ -34,7 +34,8 @@ hs_broadband_25 <- function(data_4) {
 
 ms_0 <- function(data_3) {
   ggplot(data_3) +
-    geom_boxplot(aes(x = County, y = PercentMetTestedOnly, fill = has_0)) +
+    geom_boxplot(aes(x = County, y = PercentMetTestedOnly,
+                     fill = factor(has_0))) +
 
     labs(
       title = "State Test Satisfactory % vs Grade Level Based on County",
@@ -53,7 +54,8 @@ ms_0 <- function(data_3) {
 
 ms_1 <- function(data_3) {
     ggplot(data_3) +
-    geom_boxplot(aes(x = County, y = PercentMetTestedOnly, fill = has_1)) +
+    geom_boxplot(aes(x = County, y = PercentMetTestedOnly,
+                     fill = factor(has_1))) +
 
     labs(
       subtitle = "(English language learners grades 6 - 8 with 1 provider to 25
@@ -71,7 +73,8 @@ ms_1 <- function(data_3) {
 
 hs_0 <- function(data_4) {
   ggplot(data_4) +
-    geom_boxplot(aes(x = County, y = PercentMetTestedOnly, fill = has_0)) +
+    geom_boxplot(aes(x = County, y = PercentMetTestedOnly,
+                     fill = factor(has_0))) +
 
     labs(
       title = "State Test Satisfactory % vs Grade Level Based on County",
@@ -90,7 +93,8 @@ hs_0 <- function(data_4) {
 
 hs_1 <- function(data_4) {
   ggplot(data_4) +
-    geom_boxplot(aes(x = County, y = PercentMetTestedOnly, fill = has_1)) +
+    geom_boxplot(aes(x = County, y = PercentMetTestedOnly,
+                     fill = factor(has_1))) +
 
     labs(
       title = "High School State Test Satisfactory Percentage vs Grade Level
