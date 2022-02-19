@@ -14,7 +14,7 @@ create_list <- function(data) {
   lapply(stats_list, round, 2)
 }
 
-# Test satisfactory average where less than 50% of population has 
+# Test satisfactory average where less than 50% of population has
 # at least 100Mbps
 slow_percent_met <- function(data) {
   data %>%
@@ -23,7 +23,7 @@ slow_percent_met <- function(data) {
     pull(avg_met_tested)
 }
 
-# Test satisfactory average where more than 50% if population has 
+# Test satisfactory average where more than 50% if population has
 # at least 100Mbps
 fast_percent_met <- function(data) {
   filter_greater_half <- data %>%
@@ -33,7 +33,7 @@ fast_percent_met <- function(data) {
   filter_greater_half
 }
 
-# Test satisfactory average where less than 50% of population does have at 
+# Test satisfactory average where less than 50% of population does have at
 # least 2 providers with at least 100 mbps
 less_percent_met <- function(data) {
   filtered <- data %>%
@@ -41,7 +41,7 @@ less_percent_met <- function(data) {
   return(mean(filtered$PercentMetTestedOnly))
 }
 
-# Test satisfactory average where more than 50% of population does have at 
+# Test satisfactory average where more than 50% of population does have at
 # least 2 providers with at least 100 mbps
 more_percent_met <- function(data) {
   filtered <- data %>%
@@ -49,7 +49,7 @@ more_percent_met <- function(data) {
   return(mean(filtered$PercentMetTestedOnly))
 }
 
-# Test satisfactory average of low income students in counties where more than 
+# Test satisfactory average of low income students in counties where more than
 # 50% of population has at least 100 mbps
 low_income_fast_percent_met <- function(data) {
   result <- data %>%
@@ -59,7 +59,7 @@ low_income_fast_percent_met <- function(data) {
   result
 }
 
-# Test satisfactory average of low income students in counties where more than 
+# Test satisfactory average of low income students in counties where more than
 # 50% of population has at least 100 mbps
 low_income_slow_percent_met <- function(data) {
   result <- data %>%
