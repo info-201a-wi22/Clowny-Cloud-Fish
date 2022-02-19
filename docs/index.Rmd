@@ -175,7 +175,7 @@ Education is fundamental to our growth whether it's done in a classroom setting 
   -	We found this dataset through Data.gov. The citation is listed in references.
 
 ### Expected Implications
-In the history of education, having access to the internet has never been so critical. Teachers are increasingly turning to cloud-based learning management systems, such as Canvas, for the purpose of delivering and collecting assignments. This puts students without reliable access to the internet at a serious disadvantage. Not only are they unable to submit deliverables, but they also lack access to other online learning sources such as YouTube and Khan Academy. Broadband programs that provide students with a reliable internet connection can be funded by the government to address this inequity issue in education. Internet providers that want to invest in the future can offer students discounts on certain speeds. Internet companies can also upgrade or replace fiber optic cables in certain areas to improve broadband speed.
+In the history of education, having access to the internet has never been so critical. Teachers are increasingly turning to cloud-based learning management systems, such as Canvas, for the purpose of delivering and collecting assignments. This puts students without reliable access to the internet at a serious disadvantage. Not only are they unable to submit deliverables, but they also lack access to other online learning resources such as YouTube and Khan Academy. Broadband programs that provide students with a reliable internet connection can be funded by the government to address this inequity issue in education. Internet providers that want to invest in the future can offer students discounts on certain speeds. Internet companies can also upgrade or replace fiber optic cables in certain areas to improve broadband speed.
 
 ### Limitations
 Our dataset of the performances of students by location is from 2011, and technology and its use in education has changed a lot since then. This posses a limitation, as the presence or extent of the disparity in education between areas based on broadband access may not be seen. This may be addressed by finding more data, but it may be something that we have to accept and address in our report. Our broadband data is also from 2016, so the state of access may have been different in 2011. Another limitation is the measurement of quality of education. Our data uses standardized testing, which although standard, may not accurately measure the performance of students and the quality of their education. Additionally, any trend between broadband access and education may be due to correlation rather than causation. Areas with more broadband access are likely to be wealthier and more urban, thus are likely to also have a higher budget for schooling. This means areas with greater access may have better performance in education due to better textbooks and teachers rather than their access to the internet.
@@ -243,23 +243,35 @@ dfd
 
 ## Chart #2
 
-<<<<<<< HEAD
 ### <u>Broadband Access and Education</u>
 
 ```{r, broadband_effects, echo = FALSE, fig.show="hold", out.width="70%"}
 data <- filter_data(broadband_student_scores)
 generate_plot(data)
 ```
+
+
+#### Purpose
+One of the reasons why we wanted to conduct this research was to determine the potential effects of broadband access on student academic performance. 
+This chart shows the correlation between the percentage of students who have access to acceptable broadband and the percentage of those students who meet testing standards. 
+
+
+#### Observations and Insights
+Based on our chart, there seems to be a negative correlation between broadband access and student academic performance. 
+We anticipated higher percentages of broadband access to correlate with higher percentage of students meeting testing standards. 
+Our chart, however, tells us otherwise. With the datasets that we have used, we are unable to conclude whether or not there is correlation between broadband access and student performance. 
+
 <!-------------------------------------------------------------------------------------------------->
 
 ## Chart #3 
+
 ### <u>Middle School English Lanuage Leaners and No Broadband Access</u>
 
 <!-- # ```{r, no_broadband, echo = FALSE, fig.show="hold", out.width="70%"} -->
 <!-- # data_1 <- filter_english_learner_students(test_scores) -->
 <!-- # data_2 <- student_broadband_combine(data_1) -->
 <!-- # data_3 <- -->
-<!-- # -->
+<!-- #  -->
 <!-- # >>>>>>> ab72f479002b121ca2496251d74ee3777416016b -->
 <!-- # <!--------------------------------------------------------------------------------------------------> -->
 
