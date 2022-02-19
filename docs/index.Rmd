@@ -19,7 +19,7 @@ source("data_access.R")
 # <!-- source("Aggregate Table") -->
 source("q1_chart.R")
 source("q2_chart.R")
-# <!-- source("Chart #3") -->
+source("q3_chart.R")
 ```
 
 <!-- ## What is this file for? -->
