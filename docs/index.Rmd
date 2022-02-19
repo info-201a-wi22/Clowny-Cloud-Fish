@@ -70,16 +70,24 @@ source("q3_chart.R")
 
 ## Proposal
 
+<br>
+
 ### Abstract
 We are concerned with inequity in students having broadband access because it may disadvantage many students as education relies more on technology. To address this concern, we plan to analyze multiple datasets on student state assessment performance in Washington and see if there is a correlation between their performance and broadband access.
+
+<br>
 
 ### Keywords
 1. Broadband
 2. Equitable Education
 3. Accessibility
 
+<br>
+
 ### Introduction
 Education is fundamental to our growth whether it's done in a classroom setting or in our homes. As our society gravitates towards a technology-based empire, broadband must grow with our needs to prevent unbalanced progress. During the pandemic, this was highlighted when children were left to study at restaurants and parking lots with free Wi-Fi. The prevalent imbalance showcased the privilege of having expendable income for broadband and having access to reliable broadband. Our primary focus is on students and their academic status in the school year 2016-17, and our broadband data is from 2016. We will analyze broadband access within the different geographic areas within the US and see if there's a correlation between student academic growth and broadband access.
+
+<br>
 
 ### Design Situation
 
@@ -140,12 +148,15 @@ Education is fundamental to our growth whether it's done in a classroom setting 
   1. While Internet access would provide opportunities to underprivileged students, the incumbent privileged students would likely suffer from higher competition.
 
   2. Organizations may decide to limit Internet access to students who already have it. This is fairly easy to implement since it involves taking resources away rather than providing them. However, this would harm the education of students already benefiting from Internet access and may indirectly impact society as a whole.
-
+  
+<br>
 
 ### Research Questions
 1. Does limited broadband access impact on test satisfactory levels?
 2. Is broadband access a factor in the different test subject performance?
 3. Does English as a second language students performance differ based on broadband speeds?
+
+<br>
 
 ### The Dataset
 - **Report Card Assessment Data 2016-2017 School Year**
@@ -173,15 +184,23 @@ Education is fundamental to our growth whether it's done in a classroom setting 
   -	Since this was our decoder and only stated the longitude, latitude, and name of the area, we did not question the validity of the data.
   - The table was updated on April 8, 2021.
   -	We found this dataset through Data.gov. The citation is listed in references.
+  
+<br>
 
 ### Expected Implications
 In the history of education, having access to the internet has never been so critical. Teachers are increasingly turning to cloud-based learning management systems, such as Canvas, for the purpose of delivering and collecting assignments. This puts students without reliable access to the internet at a serious disadvantage. Not only are they unable to submit deliverables, but they also lack access to other online learning resources such as YouTube and Khan Academy. Broadband programs that provide students with a reliable internet connection can be funded by the government to address this inequity issue in education. Internet providers that want to invest in the future can offer students discounts on certain speeds. Internet companies can also upgrade or replace fiber optic cables in certain areas to improve broadband speed.
 
+<br>
+
 ### Limitations
 Our dataset of the performances of students by location is from 2016, and technology and its use in education has changed a lot since then, especially with the move to online education from the COVID pandemic. This posses a limitation, as the presence or extent of the disparity in education between areas based on broadband access may not be seen. This may be addressed by finding more data, but it may be something that we have to accept and address in our report. Another limitation is the measurement of quality of education. Our data uses standardized testing, which although standard, may not accurately measure the performance of students and the quality of their education. Additionally, any trend between broadband access and education may be due to correlation rather than causation. Areas with more broadband access are likely to be wealthier and more urban, thus are likely to also have a higher budget for schooling. This means areas with greater access may have better performance in education due to better textbooks and teachers rather than their access to the internet.
 
+<br>
+
 ### Acknowledgements
-We recognize Local Point for giving us our code name and selling food overpriced food that prompted us to examine the notion of accessibility.
+We recognize Local Point for giving us our code name and selling overpriced food that prompted us to examine the notion of accessibility.
+
+<br>
 
 ### References
 
@@ -197,6 +216,8 @@ Riaz, Humza. (2019). Geography Lookup Table [CSV]. Retrieved from https://openda
 
 School Connectivity. National Center for Education Statistics. (n.d.). Retrieved February 4, 2022, from https://nces.ed.gov/pubs2002/internet/3.asp
 
+<br>
+
 ### Appendix A:
 No questions at this time.
 
@@ -210,7 +231,8 @@ summary_stats <- create_list(broadband_student_scores)
 <br>
 <p style="font-size:17px">
 Below are a few summary statistics from our dataset.<br>
-Medium Internet speed is considered to be at least 100 Mbps.
+Medium Internet speed is considered to be at least 100 Mbps.<br>
+Majority is considered to be over 50 percent.
 <br><br>
 <p style="font-size:17px;background-color:#F2EEED;padding:5px;">
 <b>1)</b> The mean proportion of students who met test standards in counties where the majority of the population have / don’t have at least medium Internet speed are <b>`r summary_stats$fast_percent_met`</b> and <b>`r summary_stats$slow_percent_met`</b> respectively.</p>
@@ -244,15 +266,14 @@ data <- summarize_data(broadband_student_scores)
 plot(create_scatter(data, "percent_has_1_medium", create_speed_labels("medium")))
 plot(create_scatter(data, "percent_has_1_fast", create_speed_labels("fast")))
 ```
-<br>
+<br><br>
 <div style="background-color:#F2EEED;padding:5px;">
 <p style="text-indent:40px;font-size:17px;">
   These scatter plots attempt to roughly illustrate the impact that Internet speed has on the quality of education. Specifically, it measures the correlation between <i><b>1)</b> the population proportion of each county that has at least medium (100Mbps)/ fast level (250Mbps) Internet speed</i> to <i><b>2)</b> the mean proportion of high school students who met test standards</i>. Most counties seem to have a high population proportion with at least medium Internet access, while most have either a high or low population proportion with at least fast Internet access. </p>
 <p style="text-indent:40px;font-size:17px;">
   Both graphs show a slightly negatively sloped linear regression line, which would indicate that the higher the population proportion with medium / fast Internet speed, the less students meet the test standards. This can loosely imply that better Internet speed does not result in better education. However, correlation does not imply causation, and so further tests would be required. Moreover, if you remove a couple of outliers towards the top left of the graph, the regression line would probably be positively sloped. </p>
 </div>
-<br>
-<br>
+<br><br>
 
 ### <u>Access Points and Education</u>
 
@@ -279,17 +300,21 @@ Both graphs show a slightly negatively sloped linear regression line, which woul
 data <- filter_data(broadband_student_scores)
 generate_plot(data)
 ```
-
-
-#### Purpose
+<br><br>
+<div style="background-color:#F2EEED;padding:5px;">
+<span style="font-size:150%"><b><u>Purpose</u></b></span>
+<br><br>
+<p style="text-indent:40px;">
 One of the reasons why we wanted to conduct this research was to determine the potential effects of broadband access on student academic performance.
-This chart shows the correlation between the percentage of students who have access to acceptable broadband and the percentage of those students who meet testing standards.
-
-
-#### Observations and Insights
+This chart shows the correlation between the percentage of students who have access to acceptable broadband and the percentage of those students who meet testing standards. </p></div>
+<br>
+<div style="background-color:#F2EEED;padding:5px;">
+<span style="font-size:150%"><b><u>Observations and Insights</u></b></span>
+<br><br>
+<p style="text-indent:40px;">
 Based on our chart, there seems to be a negative correlation between broadband access and student academic performance.
 We anticipated higher percentages of broadband access to correlate with higher percentage of students meeting testing standards.
-Our chart, however, tells us otherwise. With the datasets that we have used, we are unable to conclude whether or not there is correlation between broadband access and student performance.
+Our chart, however, tells us otherwise. With the datasets that we have used, we are unable to conclude whether or not there is correlation between broadband access and student performance. </p></div>
 
 <!-------------------------------------------------------------------------------------------------->
 
