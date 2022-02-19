@@ -11,7 +11,7 @@ create_list <- function(data) {
   stats_list$more_percent_met <- more_percent_met(data)
   stats_list$low_income_fast_percent_met <- low_income_fast_percent_met(data)
   stats_list$low_income_slow_percent_met <- low_income_slow_percent_met(data)
-  stats_list
+  lapply(stats_list, round, 2)
 }
 
 # Test satisfactory average where less than 50% of population has 

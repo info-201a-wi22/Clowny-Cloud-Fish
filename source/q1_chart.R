@@ -13,8 +13,8 @@ create_scatter <- function(data, variable, labels) {
           panel.grid.minor = element_blank(),
           panel.background = element_blank(), 
           axis.line = element_line(colour = "black"),
-          axis.title.x = element_text(face = 'italic', margin = margin(t = 15, r = 0, b = 0, l = 0)),
-          axis.title.y = element_text(face = 'italic', margin = margin(t = 0, r = 15, b = 0, l = 0)),
+          axis.title.x = element_text(margin = margin(t = 15, r = 0, b = 0, l = 0)),
+          axis.title.y = element_text(margin = margin(t = 0, r = 15, b = 0, l = 0)),
           panel.border = element_rect(colour = "black", fill = NA, size=3))
 }
 
