@@ -4,7 +4,6 @@
 
 # Utilize broadband and testscores database to answer the question.
 
-
 # Filter test_scores for just English Language Learners
 filter_english_learners <- function(data_1) {
   filter_data <- data_1 %>%

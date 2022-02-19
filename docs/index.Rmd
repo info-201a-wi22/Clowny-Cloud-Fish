@@ -274,6 +274,7 @@ data_3 <- ms_broadband_25(data_2)
 plot(ms_0(data_3))
 plot(ms_1(data_3))
 ```
+
 ```
 
 ```
@@ -285,4 +286,6 @@ data_4 <- hs_broadband_25(data_2)
 plot(hs_0(data_4))
 plot(hs_1(data_4))
 ```
-```
+#### Purpose
+
+#### Observations and Insights
