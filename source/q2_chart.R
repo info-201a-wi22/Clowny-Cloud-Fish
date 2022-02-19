@@ -6,10 +6,10 @@ filter_data <- function(data) {
              percent_has_1_medium,
              TestSubject) %>%
     summarize(avg_met_standard = mean(PercentMetTestedOnly))
-  
+
   temp$percent_has_1_medium <- temp$percent_has_1_medium %>%
     round(2) * 100
-  
+
   temp$avg_met_standard <- temp$avg_met_standard * 100
   temp
 }
@@ -25,7 +25,3 @@ generate_plot <- function(data) {
        x = "Percent of Students With Access to Broadband",
        y = "Percent of Students That Met Testing Standards")
 }
-
-
-
-

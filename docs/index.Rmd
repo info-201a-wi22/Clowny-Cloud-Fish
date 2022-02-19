@@ -244,15 +244,14 @@ data <- summarize_data(broadband_student_scores)
 plot(create_scatter(data, "percent_has_1_medium", create_speed_labels("medium")))
 plot(create_scatter(data, "percent_has_1_fast", create_speed_labels("fast")))
 ```
-<br>
+<br><br>
 <div style="background-color:#F2EEED;padding:5px;">
 <p style="text-indent:40px;font-size:17px;">
   These scatter plots attempt to roughly illustrate the impact that Internet speed has on the quality of education. Specifically, it measures the correlation between <i><b>1)</b> the population proportion of each county that has at least medium (100Mbps)/ fast level (250Mbps) Internet speed</i> to <i><b>2)</b> the mean proportion of high school students who met test standards</i>. Most counties seem to have a high population proportion with at least medium Internet access, while most have either a high or low population proportion with at least fast Internet access. </p>
 <p style="text-indent:40px;font-size:17px;">
   Both graphs show a slightly negatively sloped linear regression line, which would indicate that the higher the population proportion with medium / fast Internet speed, the less students meet the test standards. This can loosely imply that better Internet speed does not result in better education. However, correlation does not imply causation, and so further tests would be required. Moreover, if you remove a couple of outliers towards the top left of the graph, the regression line would probably be positively sloped. </p>
 </div>
-<br>
-<br>
+<br><br>
 
 ### <u>Access Points and Education</u>
 
@@ -279,17 +278,21 @@ Both graphs show a slightly negatively sloped linear regression line, which woul
 data <- filter_data(broadband_student_scores)
 generate_plot(data)
 ```
-
-
-#### Purpose
+<br><br>
+<div style="background-color:#F2EEED;padding:5px;">
+<span style="font-size:150%"><b><u>Purpose</u></b></span>
+<br><br>
+<p style="text-indent:40px;">
 One of the reasons why we wanted to conduct this research was to determine the potential effects of broadband access on student academic performance.
-This chart shows the correlation between the percentage of students who have access to acceptable broadband and the percentage of those students who meet testing standards.
-
-
-#### Observations and Insights
+This chart shows the correlation between the percentage of students who have access to acceptable broadband and the percentage of those students who meet testing standards. </p></div>
+<br>
+<div style="background-color:#F2EEED;padding:5px;">
+<span style="font-size:150%"><b><u>Observations and Insights</u></b></span>
+<br><br>
+<p style="text-indent:40px;">
 Based on our chart, there seems to be a negative correlation between broadband access and student academic performance.
 We anticipated higher percentages of broadband access to correlate with higher percentage of students meeting testing standards.
-Our chart, however, tells us otherwise. With the datasets that we have used, we are unable to conclude whether or not there is correlation between broadband access and student performance.
+Our chart, however, tells us otherwise. With the datasets that we have used, we are unable to conclude whether or not there is correlation between broadband access and student performance. </p></div>
 
 <!-------------------------------------------------------------------------------------------------->
 
