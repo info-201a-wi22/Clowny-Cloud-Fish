@@ -313,7 +313,9 @@ plot(hs_0(data_4))
 plot(hs_1(data_4))
 ```
 #### Purpose
-Due to language barrier, we wanted to observe how those students' academics were impacted by broadband access. In these charts
+Due to language barrier, we wanted to observe how those students' academics were impacted by broadband access. In our digital age, our education is moving towards online research, homework, and resources. Navigating our academic system is hard enough for non-English speakers, and if they don’t have access to broadband, it’ll can push them farther behind. Therefore, we want to explore the impact broadband had on English learners. For this analysis, the definition of broadband is 1 provider and having at least 25 mbps.
+
 #### Observations and Insights
+For easier analysis, I broken down the data between middle and high school students. From there, we see satisfactory percentage in each county based on having a broadband provider. With middle school students, the correlation between broadband access and having a satisfactory grade on the state test is good. We do have outlier in some counties, and if we discount those, we do see the upticks in counties that broadband access vs. those who do not have access. In particular,  The peaks happen in larger counties therefore, we have made assumptions
 
 <!-------------------------------------------------------------------------------------------------->
