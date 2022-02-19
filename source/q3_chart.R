@@ -18,14 +18,14 @@ student_broadband_combine <- function(data_2) {
   left_join(broadband, by = c("County" = "county"))
 }
 
-middle_student_broadband_25 <- function(data_3) {
+ms_broadband_25 <- function(data_3) {
   ms_data <- data_2 %>%
   filter(speed == 25) %>%
   filter(GradeLevel == "6th Grade" | GradeLevel == "7th Grade" |
          GradeLevel == "8th Grade")
 }
 
-high_student_broadband_25 <- function(data_4) {
+hs_broadband_25 <- function(data_4) {
   hs_data <- data_2 %>%
   filter(speed == 25) %>%
   filter(GradeLevel == "9th Grade" | GradeLevel == "10th Grade" |
