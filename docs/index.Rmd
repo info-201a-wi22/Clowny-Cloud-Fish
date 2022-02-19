@@ -265,7 +265,7 @@ Our chart, however, tells us otherwise. With the datasets that we have used, we 
 
 ## Chart #3 
 
-### <u>Middle School English Lanuage Leaners with 0/1 Broadband Access</u>
+### <u>Middle School English Lanuage Leaners and 0/1 Broadband Access</u>
 
 ```{r, ms_broadband, echo = FALSE, fig.show="hold", out.width="70%"}
 data_1 <- filter_english_learners(test_scores)
@@ -279,7 +279,7 @@ plot(ms_1(data_3))
 
 ```
 
-### <u>Middle School English Lanuage Leaners with 0/1 Broadband Access</u>
+### <u>Middle School English Lanuage Leaners and 0/1 Broadband Access</u>
 
 ```{r, hs_broadband, echo = FALSE, fig.show="hold", out.width="70%"}
 data_4 <- hs_broadband_25(data_2)
