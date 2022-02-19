@@ -38,7 +38,8 @@ ms_0 <- function(data_3) {
 
     labs(
       title = "State Test Satisfactory % vs Grade Level Based on County",
-      subtitle = "(English language learners grades 6 - 8 \n with 0 providers to 25 mbps)",
+      subtitle = "(English language learners grades 6 - 8 with 0 providers to 25
+                  mbps)",
       x = "County",
       y = "% of Who Scored Satisfactory",
     ) +
@@ -55,8 +56,8 @@ ms_1 <- function(data_3) {
     geom_boxplot(aes(x = County, y = PercentMetTestedOnly, fill = has_1)) +
 
     labs(
-      subtitle = "(English language learners grades 6 - 8 \n with 1 provider to
-                  25 mbps)",
+      subtitle = "(English language learners grades 6 - 8 with 1 provider to 25
+                  mbps)",
       x = "County",
       y = "% of Who Scored Satisfactory",
     ) +
@@ -74,8 +75,8 @@ hs_0 <- function(data_4) {
 
     labs(
       title = "State Test Satisfactory % vs Grade Level Based on County",
-      subtitle = "(English language learners grades 9 - 12 \n with 0 providers
-                  to 25 mbps)",
+      subtitle = "(English language learners grades 9 - 12 with 0 providers to
+                  25 mbps)",
       x = "County",
       y = "",
     ) +
@@ -94,7 +95,7 @@ hs_1 <- function(data_4) {
     labs(
       title = "High School State Test Satisfactory Percentage vs Grade Level
               Based on County",
-      subtitle = "(English language learners grades 9 - 12 \n with 1 provider to
+      subtitle = "(English language learners grades 9 - 12 with 1 provider to
                   25 mbps)",
       x = "County",
       y = "",
