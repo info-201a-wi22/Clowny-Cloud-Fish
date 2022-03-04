@@ -17,10 +17,13 @@ filter_data <- function(data) {
 generate_plot <- function(data) {
   ggplot(data, aes(x = percent_has_1_medium,
                    y = avg_met_standard,
-                   shape = TestSubject,
-                   color = TestSubject)) +
-  geom_point() +
-  geom_smooth(method = lm, se = FALSE, fullrange = TRUE) +
+                   )) +
+  geom_point(mapping = aes(text = paste("Percent Access: ",
+                                        round(percent_has_1_medium, 2),
+                                        "\nPercent Passed: ",
+                                        round(avg_met_standard, 2), 
+                                        sep = ""))) +
+  geom_smooth(formula = y ~ x, method = lm, se = FALSE, fullrange = TRUE) +
   labs(title = "Effects of Broadband Access On Test Subject Performance",
        x = "Percent of Students With Access to Broadband",
        y = "Percent of Students That Met Testing Standards")

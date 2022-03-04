@@ -14,19 +14,19 @@ filter_english_learners <- function(data_1) {
 
 # Join the broadband and test_scores datasets
 student_broadband_combine <- function(data_2) {
-  combine_data <- data_1 %>%
+  combine_data <- data_2 %>%
   left_join(broadband, by = c("County" = "county"))
 }
 
 ms_broadband_25 <- function(data_3) {
-  ms_data <- data_2 %>%
+  ms_data <- data_3 %>%
   filter(speed == 25) %>%
   filter(GradeLevel == "6th Grade" | GradeLevel == "7th Grade" |
          GradeLevel == "8th Grade")
 }
 
 hs_broadband_25 <- function(data_4) {
-  hs_data <- data_2 %>%
+  hs_data <- data_4 %>%
   filter(speed == 25) %>%
   filter(GradeLevel == "9th Grade" | GradeLevel == "10th Grade" |
          GradeLevel == "11th Grade" | GradeLevel == "12th Grade")

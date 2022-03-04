@@ -6,7 +6,11 @@ create_scatter <- function(data, variable, labels) {
                                     y = PercentMetTestedOnly)) +
     scale_x_continuous(breaks = c(0, 0.5, 1)) +
     scale_y_continuous(breaks = c(0, 0.5, 1)) +
-    geom_point() +
+    geom_point(mapping = aes(text = paste("Percent Access: ", 
+                                          round(get(variable), 2), 
+                                          "\nPercent Passed: ", 
+                                          round(PercentMetTestedOnly, 2),
+                                          sep = ""))) +
     geom_smooth(formula = y ~ x, method = "lm", se = F, color = "red") +
     labs(title = labels[1],
          x = labels[2],
