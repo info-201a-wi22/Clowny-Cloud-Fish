@@ -1,3 +1,5 @@
+library(shiny)
+
 report_tab <- tabPanel(
   "Report",
   titlePanel("Report"),

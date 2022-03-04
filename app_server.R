@@ -1,7 +1,12 @@
-source("source/data_access.R")
-source("source/q1_chart.R")
-source("source/q2_chart.R")
-source("source/q3_chart.R")
+library(shiny)
+
+setwd("~/info201/Clowny-Cloud-Fish/source")
+source("data_access.R")
+
+setwd("~/info201/Clowny-Cloud-Fish")
+source("./source/q1_chart.R")
+source("./source/q2_chart.R")
+source("./source/q3_chart.R")
 
 server <- function(input, output) {
   output$chart_1 <- renderPlotly({

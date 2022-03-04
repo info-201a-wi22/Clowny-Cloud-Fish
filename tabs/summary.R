@@ -1,3 +1,5 @@
+library(shiny)
+
 summary_tab <- tabPanel(
   "Summary",
   titlePanel("Summary"),
