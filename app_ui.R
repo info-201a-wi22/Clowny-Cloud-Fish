@@ -1,13 +1,9 @@
-library(shiny)
-
-setwd("~/info201/Clowny-Cloud-Fish")
-
-source("./tabs/intro.R")
-source("./tabs/chart1.R")
-source("./tabs/chart2.R")
-source("./tabs/chart3.R")
-source("./tabs/summary.R")
-source("./tabs/report.R")
+source("tabs/intro.R")
+source("tabs/chart1.R")
+source("tabs/chart2.R")
+source("tabs/chart3.R")
+source("tabs/summary.R")
+source("tabs/report.R")
 
 ui <- navbarPage(
   "Broadband Effect on Education",

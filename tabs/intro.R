@@ -1,5 +1,3 @@
-library(shiny)
-
 intro_tab <- tabPanel(
   "Introduction",
   titlePanel("Introduction"),
