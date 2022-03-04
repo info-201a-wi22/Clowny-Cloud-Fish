@@ -10,8 +10,8 @@ source("./source/q3_chart.R")
 
 server <- function(input, output) {
   output$chart_1 <- renderPlotly({
-    return(ggplotly(create_scatter(broadband_student_scores, 
-                                   "percent_has_1_medium", 
+    data <- summarize_data(broadband_student_scores)
+    return(ggplotly(create_scatter(data, "percent_has_1_medium", 
                                    create_speed_labels("medium"))))
   })
   
