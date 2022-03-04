@@ -1,3 +1,5 @@
+library("shiny")
+
 source("tabs/intro.R")
 source("tabs/chart1.R")
 source("tabs/chart2.R")
