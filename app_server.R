@@ -1,5 +1,3 @@
-library("shiny")
-
 source("source/data_access.R")
 source("source/q1_chart.R")
 source("source/q2_chart.R")
