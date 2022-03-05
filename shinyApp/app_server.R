@@ -7,7 +7,7 @@ source("../source/q3_chart.R")
 
 
 server <- function(input, output) {
-  # Page 1
+  # Interactive Page 1
   data_1 <- summarize_data(broadband_student_scores)
   speed_variables <- c("percent_has_1_medium", "percent_has_1_fast")
   access_variables <- c("prop_1_2_medium", "prop_1_2_fast")
@@ -22,9 +22,9 @@ server <- function(input, output) {
     all_plots_1[[x]] <- create_scatter(data_1, speed_variables[x], create_speed_labels(speed))
     all_plots_1[[x + 2]] <- create_scatter(data_1, access_variables[x], create_access_labels(speed))
   }
-  all_plots_1 <- all_plots_1 %>% 
+  all_plots_1 <- all_plots_1 %>%
     lapply(ggplotlyify, T)
-  
+
   output$chart_1a <- renderPlotly({
     if (input$chart_1_variables == "Speed") {
       return(all_plots_1[[1]])
@@ -47,7 +47,7 @@ server <- function(input, output) {
   })
 
 
-  # Page 2
+  # Interactive Page 2
   data_2 <- filter_data(broadband_student_scores)
   subjects <- c("Biology", "ELPA", "English Language Arts", "Math", "Science")
   all_plots_2 <- list()
@@ -60,11 +60,11 @@ server <- function(input, output) {
     all_plots_2[[input$chart_2_variables]]
   })
 
-  # Page 3
+  # Interactive Page 3
   basic_data <- student_broadband_combine(filter_english_learners(test_scores))
   data_3a <- ms_broadband_25(basic_data)
   data_3b <- hs_broadband_25(basic_data)
-  all_plots_3 <- list(ms_0(data_3a), ms_1(data_3a), hs_0(data_3b), hs_1(data_3b)) %>% 
+  all_plots_3 <- list(ms_0(data_3a), ms_1(data_3a), hs_0(data_3b), hs_1(data_3b)) %>%
     lapply(ggplotlyify, F)
   output$chart_3a <- renderPlotly({
     if (input$chart_3_variables == "Middle School") {
@@ -79,6 +79,11 @@ server <- function(input, output) {
     } else {
       return(all_plots_3[[4]])
     }
+  })
+
+  # Report Page
+  output$report_text <- renderUI({
+    all_report_texts[[input$report_sections]]
   })
 }
 

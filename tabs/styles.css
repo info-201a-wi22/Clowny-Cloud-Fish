@@ -2,11 +2,14 @@ h3 {
   text-decoration: underline;
 }
 
-p {
-  text-indent: 20px;
+div:not(h3):not(h4) {
+  font-size: 20px;
 }
 
-span.research_question {
-  color: blue;
-  font-weight: bold;
+.navbar-brand {
+  color: #6294E9;
+}
+
+p {
+  text-indent: 20px;
 }
