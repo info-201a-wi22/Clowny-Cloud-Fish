@@ -9,7 +9,6 @@ source("../tabs/report.R")
 source("../source/data_access.R")
 
 ui <- navbarPage(
-  theme = includeCSS("../tabs/styles.css"),
   "Broadband Effect on Education",
   intro_tab,
   chart_1_tab(broadband_student_scores),
