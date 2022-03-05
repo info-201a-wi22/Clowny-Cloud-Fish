@@ -5,11 +5,12 @@ source("../tabs/chart1.R")
 source("../tabs/chart2.R")
 source("../tabs/chart3.R")
 source("../tabs/summary.R")
-source("../tabs/report_1.R")
+source("../tabs/report.R")
 source("../source/data_access.R")
 
 ui <- navbarPage(
-  "Broadband Effect on Education",
+  tags$span(style = "color:blue;font-size:30px;font-weight:bold", "Broadband Effect on Education"),
+  tags$head(includeCSS("../tabs/styles.css")),
   intro_tab,
   chart_1_tab,
   chart_2_tab,

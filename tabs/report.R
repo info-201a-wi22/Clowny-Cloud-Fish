@@ -6,7 +6,6 @@ report_choices <- c("Metadata", "Abstract", "Introduction", "Design Situation",
 
 report_tab <- tabPanel(
   "Report",
-  tags$head(includeCSS("../tabs/styles.css")),
   titlePanel("Report"),
   sidebarLayout(
     sidebarPanel(
@@ -23,10 +22,9 @@ report_tab <- tabPanel(
   )
 )
 
-#Metadata
-
 meta_data <- tags$div(class = "text",
   tags$h3("Metadata"),
+  tags$br(),
   "Project Title: Broadband Effect on Education",
   tags$br(),
   tags$br(),
@@ -41,8 +39,6 @@ meta_data <- tags$div(class = "text",
   tags$br(),
   "Key Words: Broadband, Equitable Education, Accessibility"
 )
-
-# Abstract
 
 abstract <- tags$div(class = "text",
   tags$h3("Abstract"),
