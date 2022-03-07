@@ -38,7 +38,7 @@ server <- function(input, output) {
       return(all_plots_1[[4]])
     }
   })
-  output$description_1 <- renderText({
+  output$description_1 <- renderUI({
     if (input$chart_1_variables == "Speed") {
       return(description_1a)
     } else {
@@ -95,7 +95,7 @@ ggplotlyify <- function(plot_data, change_tooltip) {
   }
 }
 
-description_1a <- "These scatter plots attempt to roughly illustrate the impact that Internet speed has on the quality of education. Specifically, it measures the correlation between 1) the population proportion of each county that has at least medium (100Mbps)/ fast level (250Mbps) Internet speed to 2) the mean proportion of high school students who met test standards."
-description_1b <- "These scatter plots attempt to roughly illustrate the impact that the number of Internet access points has on the quality of education. Specifically, it measures the correlation between 1) the population proportion of each county that has at least two access points (relative to one) to 2) the mean proportion of high school students who met test standards. Each graph takes into consideration two different Internet speeds, medium and fast."
+description_1a <- tags$p(class = "chart_description", "These scatter plots attempt to roughly illustrate the impact that Internet speed has on the quality of education. Specifically, it measures the correlation between 1) the population proportion of each county that has at least medium (100Mbps)/ fast level (250Mbps) Internet speed to 2) the mean proportion of high school students who met test standards.")
+description_1b <- tags$p(class = "chart_description", "These scatter plots attempt to roughly illustrate the impact that the number of Internet access points has on the quality of education. Specifically, it measures the correlation between 1) the population proportion of each county that has at least two access points (relative to one) to 2) the mean proportion of high school students who met test standards. Each graph takes into consideration two different Internet speeds, medium and fast.")
 
 

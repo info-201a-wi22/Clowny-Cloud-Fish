@@ -1,7 +1,7 @@
 library(shiny)
 
 intro_tab <- tabPanel(
-  "Introduction",
+  tags$span(class = "tab", "Introduction"),
   titlePanel("Introduction"),
   mainPanel(tags$p("hello world"))
 )

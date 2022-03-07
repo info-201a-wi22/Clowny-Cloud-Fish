@@ -2,11 +2,25 @@
   background-color: #F0F5FF;
 }
 
-.navbar-nav>li>a:hover {
-    background-color: cyan
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+    background-color: #99F899
 }
 
-div:not(h3):not(h4) {
+li.active {
+  background-color: #FA5D27 !important;
+}
+
+span.tab {
+  color: #222322;
+  font-weight: bold;
+  font-size:20px;
+}
+
+div.text:not(h3):not(h4) {
+  font-size: 20px;
+}
+
+p.chart_description {
   font-size: 20px;
 }
 
@@ -15,6 +29,9 @@ h3 {
 }
 
 p {
-  text-indent: 35px;
+  text-indent: 30px;
 }
 
+.shiny-input-container {
+  font-size: 20px;
+}

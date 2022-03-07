@@ -5,7 +5,7 @@ report_choices <- c("Metadata", "Abstract", "Introduction", "Design Situation",
                     "Conclusion")
 
 report_tab <- tabPanel(
-  "Report",
+  tags$span(class = "tab", "Report"),
   titlePanel("Report"),
   sidebarLayout(
     sidebarPanel(
@@ -199,9 +199,17 @@ findings <- tags$div(class = "text",
   tags$p("Our initial hypothesis was that limited broadband access would severely hurt the test levels of English language learners, since it would add another handicap to their language deficiencies. We attempted to establish correlations between having generally acceptable broadband access and test levels for English language learners, further breaking it down by middle school and high school students. There were a few signs of positive correlation, but overall there are no conclusive trends in the data. Moreover, we lacked sufficient data for 9th and 12th grade high schoolers. Unfortunately, the results are inconclusive to answer the question.")
 )
 
-discussion <- "Insert here"
+discussion <- tags$div(class = "text",
+  tags$h3("Discussion"),
+  tags$br(),
+  tags$p("Insert Discussion here")
+)
 
-conclusion <- "Insert here"
+conclusion <- tags$div(class = "text",
+   tags$h3("Conclusion"),
+   tags$br(),
+   tags$p("Insert Conclusion here")
+)
 
 all_report_texts <- list(meta_data, abstract, introduction, design_situation, research_questions, data_sets, findings, discussion, conclusion)
 
