@@ -6,9 +6,8 @@ intro_tab <- tabPanel(
   mainPanel(
     fluidPage(
       tags$img(src = "https://github.com/info-201a-wi22/Clowny-Cloud-Fish/raw/main/image/connected_learning.jpeg",
-               align = "center"),
-      
-      tags$p("The focus of our project is to determine whether or not broadband
+               style= "display:block;margin-left:auto;margin-right:auto;width: 50%;"),
+      tags$p(class = "text", "The focus of our project is to determine whether or not broadband
         accessibility impacted student academic performance for Washington state.
         We gauged student performance through state-proctored testing data from
         2016-2017 provided by the Office of Elementary and Secondary Education,

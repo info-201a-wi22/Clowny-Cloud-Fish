@@ -8,7 +8,7 @@ source("tabs/summary.R")
 source("tabs/report.R")
 
 ui <- navbarPage(
-  tags$i(tags$span(style = "color:blue;font-size:30px;font-weight:bold", "Broadband Effect on Education")),
+  tags$i(tags$span(style = "font-family:Lucida Handwriting, Papyrus;color:blue;font-size:30px;font-weight:bold", "Broadband Effect on Education")),
   tags$head(includeCSS("tabs/styles.css")),
   intro_tab,
   chart_1_tab,
