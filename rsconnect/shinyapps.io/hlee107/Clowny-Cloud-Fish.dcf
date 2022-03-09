@@ -1,0 +1,14 @@
+name: Clowny-Cloud-Fish
+title: Clowny-Cloud-Fish
+username:
+account: hlee107
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 5811657
+bundleId: 5659459
+url: https://hlee107.shinyapps.io/Clowny-Cloud-Fish/
+when: 1646799201.09015
+lastSyncTime: 1646799201.09016
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: data
