@@ -15,7 +15,7 @@ create_scatter <- function(data, variable, labels) {
     labs(title = labels[1],
          x = labels[2],
          y = "Mean proportion of students who passed") +
-    theme(plot.title = element_text(hjust = 0.5, face = "bold", margin = margin(0,0,20,0)),
+    theme(plot.title = element_text(hjust = 0.5, face = "bold"),
           panel.grid.major = element_blank(),
           panel.grid.minor = element_blank(),
           panel.background = element_blank(),

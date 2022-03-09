@@ -6,6 +6,7 @@ summary_tab <- tabPanel(
   mainPanel(tags$div(class = "text",
     tags$br(),
     tags$br(),
+    tags$br(),
     tags$span(tags$b("Caveat"), ": Our data is obviously not comprehensive and more analysis is definitely required for conclusive results. However, based on our analysis in this study, these are some suggestions to take away."),
     tags$br(),
     tags$br(),
