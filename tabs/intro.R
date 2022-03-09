@@ -5,7 +5,8 @@ intro_tab <- tabPanel(
   titlePanel("Introduction"),
   mainPanel(
     fluidPage(
-      tags$img(src = "https://github.com/info-201a-wi22/Clowny-Cloud-Fish/raw/main/image/connected_learning.jpeg", align = "center"),
+      tags$img(src = "https://github.com/info-201a-wi22/Clowny-Cloud-Fish/raw/main/image/connected_learning.jpeg",
+               align = "center"),
       
       tags$p("The focus of our project is to determine whether or not broadband
         accessibility impacted student academic performance for Washington state.
@@ -19,6 +20,6 @@ intro_tab <- tabPanel(
         broadband access impacted satisfactory test levels. Then we broke it down
         by different subjects and broadband performance. And finally, we reviewed
         how broadband access impacted English as a second language students.")
-    )  
+    )
   )
 )
