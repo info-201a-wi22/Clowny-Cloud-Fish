@@ -5,9 +5,9 @@ account: hlee107
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 5800750
-bundleId: 5659248
+bundleId: 5659410
 url: https://hlee107.shinyapps.io/shinyApp/
-when: 1646794874.10971
-lastSyncTime: 1646794874.10972
+when: 1646798280.46104
+lastSyncTime: 1646798280.46105
 asMultiple: FALSE
 asStatic: FALSE
