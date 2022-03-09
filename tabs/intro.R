@@ -4,7 +4,7 @@ intro_tab <- tabPanel(
   tags$span(class = "tab", "Introduction"),
   titlePanel("Introduction"),
   mainPanel(
-    tags$img(src = "connected_learning.jpeg", align = "center"),
+    tags$img(src = "https://github.com/info-201a-wi22/Clowny-Cloud-Fish/raw/main/image/connected_learning.jpeg", align = "center"),
     
     tags$p("The focus of our project is to determine whether or not broadband
       accessibility impacted student academic performance for Washington state.
