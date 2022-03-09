@@ -1,0 +1,13 @@
+name: clowny-cloud-fish
+title: clowny-cloud-fish
+username:
+account: john7325
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 5811250
+bundleId: 5659293
+url: https://john7325.shinyapps.io/clowny-cloud-fish/
+when: 1646795498.81844
+lastSyncTime: 1646795498.81844
+asMultiple: FALSE
+asStatic: FALSE

@@ -202,13 +202,20 @@ findings <- tags$div(class = "text",
 discussion <- tags$div(class = "text",
   tags$h3("Discussion"),
   tags$br(),
-  tags$p("Insert Discussion here")
+  tags$p("As our education systems begin to incorporate more technological aspects in their curriculum, students that do not have access to the internet are placed at a major disadvantage. From learning management systems such as Canvas and Pearson to tutorial sites like Khan Academy; these resources are only available to those with broadband access. Utilizing a report card dataset, area table, and geography look up table, we analyzed the percentage of students who met testing standards in correlation to the percentage of students with broadband access."),
+  tags$br(),
+  tags$p("We initially expected the percentage of students with broadband access to positively correlate with the percentage of students that met testing standards. However, to our surprise, after aggregating our datasets and plotting charts, we found that these two factors are negatively correlated for most of the testing subjects in our datasets: biology, mathematics, english language arts, and science. Because of our results, we were unable to come to a conclusion about the relationship between these two factors. Nonetheless, we do not believe our results imply that broadband access has a negative impact on student performance. We still consider broadband access to be an essential resource that every student should have. Even though we were unable to come to a conclusion for our research question, it is possible that the way we aggregated and filtered data revealed some other potential implications."),
+  tags$br(),
+  tags$p("Our initial report card dataset had 951,000 student observations across the United States. The data was split into 30 different attributes; one of them being student group type. This attribute categorizes students into different groups: Homeless, Low Income, Students with Disabilities, and Foster to name a few. Due to our research topic, we completely disregarded this attribute hoping to analyze the full effects of broadband. However, this was a flaw in our analysis as we were unable to isolate the effects of the other attributes in the data. Even so, this has shed some light onto how we can look at this problem in the future."),
+  tags$br(),
+  tags$p("The results that we have achieved through this project has brought our attention to the fact that there are many major variables that can factor into a student's success; not just broadband access. Rather than disregarding these variables, we should take into consideration their effects and see how having internet access improves the performance of students in these various groups.")
+  
 )
 
 conclusion <- tags$div(class = "text",
    tags$h3("Conclusion"),
    tags$br(),
-   tags$p("Insert Conclusion here")
+   tags$p("In conclusion, having broadband access is crucial for student success. As the world of e-learning continues to grow, students without internet access are going to be placed at a major disadvantage: limited collaboration, communication, and restriction from the unending reservoir of knowledge of the online world. Even though there are many factors that influence student academic performance, having broadband access will only enhance their learning abilities. In order to address the inequity in education we must make sure that every future generation of students will have this resource. And that the only limiting factor to their learning is their own will and determination.")
 )
 
 acknowledgements <- tags$div(class = "text",
