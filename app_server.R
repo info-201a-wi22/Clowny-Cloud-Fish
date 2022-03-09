@@ -19,8 +19,10 @@ server <- function(input, output) {
     } else {
       speed <- "fast"
     }
-    all_plots_1[[x]] <- create_scatter(data_1, speed_variables[x], create_speed_labels(speed))
-    all_plots_1[[x + 2]] <- create_scatter(data_1, access_variables[x], create_access_labels(speed))
+    all_plots_1[[x]] <- create_scatter(data_1, speed_variables[x],
+                                       create_speed_labels(speed))
+    all_plots_1[[x + 2]] <- create_scatter(data_1, access_variables[x],
+                                           create_access_labels(speed))
   }
   all_plots_1 <- all_plots_1 %>%
     lapply(ggplotlyify, T)
@@ -64,7 +66,8 @@ server <- function(input, output) {
   basic_data <- student_broadband_combine(filter_english_learners(test_scores))
   data_3a <- ms_broadband_25(basic_data)
   data_3b <- hs_broadband_25(basic_data)
-  all_plots_3 <- list(ms_0(data_3a), ms_1(data_3a), hs_0(data_3b), hs_1(data_3b)) %>%
+  all_plots_3 <- list(ms_0(data_3a), ms_1(data_3a), hs_0(data_3b),
+                      hs_1(data_3b)) %>%
     lapply(ggplotlyify, F)
   output$chart_3a <- renderPlotly({
     if (input$chart_3_variables == "Middle School") {
@@ -95,7 +98,20 @@ ggplotlyify <- function(plot_data, change_tooltip) {
   }
 }
 
-description_1a <- tags$p(class = "chart_description", "These scatter plots attempt to roughly illustrate the impact that Internet speed has on the quality of education. Specifically, it measures the correlation between 1) the population proportion of each county that has at least medium (100Mbps)/ fast level (250Mbps) Internet speed to 2) the mean proportion of high school students who met test standards.")
-description_1b <- tags$p(class = "chart_description", "These scatter plots attempt to roughly illustrate the impact that the number of Internet access points has on the quality of education. Specifically, it measures the correlation between 1) the population proportion of each county that has at least two access points (relative to one) to 2) the mean proportion of high school students who met test standards. Each graph takes into consideration two different Internet speeds, medium and fast.")
-
-
+description_1a <- tags$p(class = "chart_description", "These scatter plots
+                         attempt to roughly illustrate the impact that Internet
+                         speed has on the quality of education. Specifically, it
+                         measures the correlation between 1) the population
+                         proportion of each county that has at least medium
+                         (100Mbps) / fast level (250Mbps) Internet speed to 2)
+                         the mean proportion of high school students who met
+                         test standards.")
+description_1b <- tags$p(class = "chart_description", "These scatter plots
+                         attempt to roughly illustrate the impact that the
+                         number of Internet access points has on the quality of
+                         education. Specifically, it measures the correlation
+                         between 1) the population proportion of each county
+                         that has at least two access points (relative to one)
+                         to 2) the mean proportion of high school students who
+                         met test standards. Each graph takes into consideration
+                         two different Internet speeds, medium and fast.")

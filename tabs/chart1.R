@@ -1,7 +1,7 @@
 library(shiny)
 library(plotly)
 
-chart_1_tab <- 
+chart_1_tab <-
     tabPanel(
       tags$span(class = "tab", "Chart #1"),
       titlePanel("Chart #1"),
@@ -20,9 +20,8 @@ chart_1_tab <-
                   tags$br(),
                   tags$br(),
                   tags$br(),
-                  plotlyOutput("chart_1b"))
+                  plotlyOutput("chart_1b"),
+                  tags$br(),
+                  tags$br())
       )
     )
-    
-
-

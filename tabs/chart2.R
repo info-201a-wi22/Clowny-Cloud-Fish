@@ -9,13 +9,18 @@ chart_2_tab <- tabPanel(
       selectInput(
         inputId = "chart_2_variables",
         label = "Select Subject",
-        choices = c("Biology", "ELPA", "English Language Arts", "Math", "Science")
+        choices = c("Biology", "ELPA", "English Language Arts", "Math",
+                    "Science")
       ),
-      tags$p(class = "chart_description", "One of the reasons why we wanted to conduct this research was to determine the potential effects of broadband access on student academic performance. This chart shows the correlation between the percentage of students who have access to acceptable broadband and the percentage of those students who meet testing standards.")
+      tags$p(class = "chart_description", "One of the reasons why we wanted to
+             conduct this research was to determine the potential effects of
+             broadband access on student academic performance. This chart shows
+             the correlation between the percentage of students who have access
+             to acceptable broadband and the percentage of those students who
+             meet testing standards.")
     ),
     mainPanel(
       plotlyOutput("chart_2")
     )
   )
 )
-

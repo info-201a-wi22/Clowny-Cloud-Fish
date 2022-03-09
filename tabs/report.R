@@ -1,7 +1,7 @@
 library(shiny)
 
-report_choices <- c("Metadata", "Abstract", "Introduction", "Design Situation", 
-                    "Research Questions", "Dataset", "Findings", "Discussion", 
+report_choices <- c("Metadata", "Abstract", "Introduction", "Design Situation",
+                    "Research Questions", "Dataset", "Findings", "Discussion",
                     "Conclusion", "Acknowledgements", "References")
 
 report_tab <- tabPanel(
@@ -43,52 +43,108 @@ meta_data <- tags$div(class = "text",
 abstract <- tags$div(class = "text",
   tags$h3("Abstract"),
   tags$br(),
-  tags$p("We are concerned with inequity in students having broadband access because it may disadvantage many students as education relies more on technology. To address this concern, we plan to analyze multiple datasets on student state assessment performance in Washington and see if there is a correlation between their performance and broadband access."),
+  tags$p("We are concerned with inequity in students having broadband access
+         because it may disadvantage many students as education relies more on
+         technology. To address this concern, we plan to analyze multiple
+         datasets on student state assessment performance in Washington and see
+         if there is a correlation between their performance and broadband
+         access."),
 )
 
 introduction <- tags$div(class = "text",
   tags$h3("Introduction"),
   tags$br(),
-  tags$p("Education is fundamental to our growth whether it's done in a classroom setting or in our homes. As our society gravitates towards a technology-based empire, broadband must grow with our needs to prevent unbalanced progress. During the pandemic, this was highlighted when children were left to study at restaurants and parking lots with free Wi-Fi. The prevalent imbalance showcased the privilege of having expendable income for broadband and having access to reliable broadband. Our primary focus is on students and their academic status in the school year 2016-17, and our broadband data is from 2016. We will analyze broadband access within the different geographic areas within the US and see if there's a correlation between student academic growth and broadband access.")
+  tags$p("Education is fundamental to our growth whether it's done in a
+         classroom setting or in our homes. As our society gravitates towards a
+         technology-based empire, broadband must grow with our needs to prevent
+         unbalanced progress. During the pandemic, this was highlighted when
+         children were left to study at restaurants and parking lots with free
+         Wi-Fi. The prevalent imbalance showcased the privilege of having
+         expendable income for broadband and having access to reliable
+         broadband. Our primary focus is on students and their academic status
+         in the school year 2016-17, and our broadband data is from 2016. We
+         will analyze broadband access within the different geographic areas
+         within the US and see if there's a correlation between student academic
+         growth and broadband access.")
 )
 
 design_situation <- tags$div(class = "text",
   tags$h3("Project Framing"),
   tags$br(),
-  tags$p("Education enables individuals to build more prosperous lives and societies to achieve economic prosperity. In the modern world, education is closely intertwined with the Internet. The Internet enhances the educational experience in innumerable ways: it provides a wealth of information, increases opportunities for learning, and provides powerful tools to support the learning experience (Internet Society, 2017)."),
-  tags$p("However, the Internet's educational benefits inherently create a disparity between students who have Internet access and those who do not. Not every student has equal access to the Internet. While an impressive 99 percent of US public schools have access to the Internet (NCES, n.d.), many developing nations struggle to provide even a traditional classroom education. In his book Outliers, author Malcolm Gladwell describes the biblically eponymous \"Matthew Effect\"- advantages compound gains while disadvantages compound losses (Gwinn, 2008). In the same vein, students with Internet access will further their education, while those with minimal access will fall behind. This snowball effect can widen social and economic disparities amongst nations, social classes, and other groups."),
+  tags$p("Education enables individuals to build more prosperous lives and
+         societies to achieve economic prosperity. In the modern world,
+         education is closely intertwined with the Internet. The Internet
+         enhances the educational experience in innumerable ways: it provides
+         a wealth of information, increases opportunities for learning, and
+         provides powerful tools to support the learning experience (Internet
+         Society, 2017)."),
+  tags$p("However, the Internet's educational benefits inherently create a
+         disparity between students who have Internet access and those who do
+         not. Not every student has equal access to the Internet. While an
+         impressive 99 percent of US public schools have access to the Internet
+         (NCES, n.d.), many developing nations struggle to provide even a
+         traditional classroom education. In his book Outliers, author Malcolm
+         Gladwell describes the biblically eponymous \"Matthew Effect\"-
+         advantages compound gains while disadvantages compound losses
+         (Gwinn, 2008). In the same vein, students with Internet access will
+         further their education, while those with minimal access will fall
+         behind. This snowball effect can widen social and economic disparities
+         amongst nations, social classes, and other groups."),
   tags$br(),
   tags$h3("Human Values"),
   tags$br(),
-  tags$b("Equality"), ": The Internet's disparate impact on education is fundamentally a matter of equality. Varying levels of Internet access inherently create unequal learning environments, which results in unequal future opportunities. The main goal is to bridge this educational gap.",
+  tags$b("Equality"), ": The Internet's disparate impact on education is
+  fundamentally a matter of equality. Varying levels of Internet access
+  inherently create unequal learning environments, which results in unequal
+  future opportunities. The main goal is to bridge this educational gap.",
   tags$br(),
   tags$br(),
-  tags$b("Opportunity / Well-being"), ": Students with minimal access to the Internet are likely to have worse educational experiences and thus lesser future opportunities than their peers. We should aspire to provide them the opportunity to have an Internet-based education.",
+  tags$b("Opportunity / Well-being"), ": Students with minimal access to the
+  Internet are likely to have worse educational experiences and thus lesser
+  future opportunities than their peers. We should aspire to provide them the
+  opportunity to have an Internet-based education.",
   tags$br(),
   tags$br(),
-  tags$b("Value Tensions"), ": In order to seek equality in education, we should ideally provide opportunities to students with minimal Internet access. However, it is possible to seek equality in the opposite direction - by denying the Internet from students currently utilizing it. This may result in more equality, but lessen opportunities for the bereft students and compromise their well-being.",
+  tags$b("Value Tensions"), ": In order to seek equality in education, we should
+  ideally provide opportunities to students with minimal Internet access.
+  However, it is possible to seek equality in the opposite direction - by
+  denying the Internet from students currently utilizing it. This may result in
+  more equality, but lessen opportunities for the bereft students and compromise
+  their well-being.",
   tags$br(),
   tags$br(),
   tags$h3("Direct Stakeholders"),
   tags$br(),
-  tags$b("Educational Institutions"), ": Educational institutions are ultimately responsible for providing their students the best education possible. If data unequivocally proves that Internet access is indispensable to a superb education, they will be incentivized to provide Internet access to their students.",
+  tags$b("Educational Institutions"), ": Educational institutions are ultimately
+  responsible for providing their students the best education possible. If data
+  unequivocally proves that Internet access is indispensable to a superb
+  education, they will be incentivized to provide Internet access to their
+  students.",
   tags$br(),
   tags$br(),
-  tags$b("Education Rights Groups"), ": These organizations have a mission to make education accessible. If a lack of Internet access renders traditional education obsolete, then these organizations will strive to make Internet-based education accessible.",
+  tags$b("Education Rights Groups"), ": These organizations have a mission to
+  make education accessible. If a lack of Internet access renders traditional
+  education obsolete, then these organizations will strive to make
+  Internet-based education accessible.",
   tags$br(),
   tags$br(),
   tags$h3("Indirect Stakeholders"),
   tags$br(),
-  tags$b("Underprivileged Students"), ": Internet access will improve their quality of education and provide better future opportunities.",
+  tags$b("Underprivileged Students"), ": Internet access will improve their
+  quality of education and provide better future opportunities.",
   tags$br(),
   tags$br(),
-  tags$b("Society"), ": If Internet access bolsters more students' education, then economic output will increase in the long run.",
+  tags$b("Society"), ": If Internet access bolsters more students' education,
+  then economic output will increase in the long run.",
   tags$br(),
   tags$br(),
-  tags$b("Families"), ": They would be able to see one their own members receive quality education.",
+  tags$b("Families"), ": They would be able to see one their own members receive
+  quality education.",
   tags$br(),
   tags$br(),
-  tags$b("Privileged students"), ": If other students are granted an Internet-based education, this may increase academic competition for the incumbent privileged students.",
+  tags$b("Privileged students"), ": If other students are granted an
+  Internet-based education, this may increase academic competition for the
+  incumbent privileged students.",
   tags$br(),
   tags$br(),
   tags$h3("Benefits"),
@@ -96,15 +152,23 @@ design_situation <- tags$div(class = "text",
   "1) We may establish equality in education and welfare amongst people.",
   tags$br(),
   tags$br(),
-  "2) We can create more educated citizens, which in turn will lead to increased economic output and a more well-functioning society in the long run.",
+  "2) We can create more educated citizens, which in turn will lead to increased
+  economic output and a more well-functioning society in the long run.",
   tags$br(),
   tags$br(),
   tags$h3("Harms"),
   tags$br(),
-  "1) While Internet access would provide opportunities to underprivileged students, the incumbent privileged students would likely suffer from higher competition.",
+  "1) While Internet access would provide opportunities to underprivileged
+  students, the incumbent privileged students would likely suffer from higher
+  competition.",
   tags$br(),
   tags$br(),
-  "2) Organizations may decide to limit Internet access to students who already have it. This is fairly easy to implement since it involves taking resources away rather than providing them. However, this would harm the education of students already benefiting from Internet access and may indirectly impact society as a whole."
+  "2) Organizations may decide to limit Internet access to students who already
+  have it. This is fairly easy to implement since it involves taking resources
+  away rather than providing them. However, this would harm the education of
+  students already benefiting from Internet access and may indirectly impact
+  society as a whole.",
+  tags$br()
 )
 
 research_questions <- tags$div(class = "text",
@@ -116,7 +180,8 @@ research_questions <- tags$div(class = "text",
   "2) Is broadband access a factor in the different test subject performance?",
   tags$br(),
   tags$br(),
-  "3) Does English as a second language students performance differ based on broadband speeds?"
+  "3) Does English as a second language students performance differ based on
+  broadband speeds?"
 )
 
 data_sets <- tags$div(class = "text",
@@ -127,17 +192,28 @@ data_sets <- tags$div(class = "text",
   tags$br(),
   "- 951,000 observations and 30 variables",
   tags$br(),
-  "- We have student state assessment data of various subjects from kindergarten to 12th grade.",
+  "- We have student state assessment data of various subjects from kindergarten
+  to 12th grade.",
   tags$br(),
-  "- The dataset has multiple identifiers for schools, breakdown of student demographics, different subjects, expected outcomes, and actual standing (satisfactory/unsatisfactory) of student grade/group.",
+  "- The dataset has multiple identifiers for schools, breakdown of student
+  demographics, different subjects, expected outcomes, and actual standing
+  (satisfactory/unsatisfactory) of student grade/group.",
   tags$br(),
-  "- Age of student group and various test scores were left out. Instead the dataset categorized the students as satisfactory or unsatisfactory in the subject matter",
+  "- Age of student group and various test scores were left out. Instead the
+  dataset categorized the students as satisfactory or unsatisfactory in the
+  subject matter",
   tags$br(),
-  "- Washington Office of Superintendent of Public Instruction created the dataset on September 12, 2019. They own and update the dataset according to data.gov.",
+  "- Washington Office of Superintendent of Public Instruction created the
+  dataset on September 12, 2019. They own and update the dataset according
+  to data.gov.",
   tags$br(),
-  "- Educators and any field can make money off student data because they can create supplemental resources if they find students facing difficulties in certain subjects and tailor it to the students groups/grade having the issue.",
+  "- Educators and any field can make money off student data because they can
+  create supplemental resources if they find students facing difficulties in
+  certain subjects and tailor it to the students groups/grade having the issue.",
   tags$br(),
-  "- The data is housed and hosted on a government website which provides added protection. The validity of the data is through direct student information data, so we confident in the outcomes.",
+  "- The data is housed and hosted on a government website which provides added
+  protection. The validity of the data is through direct student information
+  data, so we confident in the outcomes.",
   tags$br(),
   "- We found this dataset through Data.gov. The citation is listed in references.",
   tags$br(),
@@ -147,19 +223,27 @@ data_sets <- tags$div(class = "text",
   tags$br(),
   "- 178,992 observations and 7 variables",
   tags$br(),
-  "- The dataset shows the broadband coverage in geographic areas throughout the country.",
+  "- The dataset shows the broadband coverage in geographic areas throughout
+  the country.",
   tags$br(),
-  "- Each observation reveals the type of area, ID of area, the technology of broadband, urban/rural, tribal/nontribal, download speeds, and the number of providers. We don't see the average price or who the providers are.",
+  "- Each observation reveals the type of area, ID of area, the technology of
+  broadband, urban/rural, tribal/nontribal, download speeds, and the number of
+  providers. We don't see the average price or who the providers are.",
   tags$br(),
-  "- It is unclear who collected the data, but the owner is Humza Riaz. It was created on March 18, 2018 and reveals the general broadband accessibility in this country.",
+  "- It is unclear who collected the data, but the owner is Humza Riaz. It was
+  created on March 18, 2018 and reveals the general broadband accessibility in
+  this country.",
   tags$br(),
-  "- This is raw data from the FCC's broadband website which has an interactive map feature that tracks various points of broadband usage in the country.",
+  "- This is raw data from the FCC's broadband website which has an interactive
+  map feature that tracks various points of broadband usage in the country.",
   tags$br(),
   "- The origin of funding is unclear, but FCC is part of the federal government.",
   tags$br(),
-  "- This data can allow for greater accessibility to broadband or highlight price gouging to users in rural areas.",
+  "- This data can allow for greater accessibility to broadband or highlight
+  price gouging to users in rural areas.",
   tags$br(),
-  "- The data was collected through surveys and public broadband information. It is credible since it's reporting hard data, but surveys are never 100%.",
+  "- The data was collected through surveys and public broadband information.
+  It is credible since it's reporting hard data, but surveys are never 100%.",
   tags$br(),
   "- We found this dataset through Data.gov. The citation is listed in references.",
   tags$br(),
@@ -169,13 +253,17 @@ data_sets <- tags$div(class = "text",
   tags$br(),
   "- 22,514,373 observations and 10 variables",
   tags$br(),
-  "- This was our reference guide for the FCC Area Table because the ID of Area was coded as a number.",
+  "- This was our reference guide for the FCC Area Table because the ID of Area
+  was coded as a number.",
   tags$br(),
-  "-	Since this was our decoder and only stated the longitude, latitude, and name of the area, we did not question the validity of the data.",
+  "-	Since this was our decoder and only stated the longitude, latitude, and
+  name of the area, we did not question the validity of the data.",
   tags$br(),
   "- The table was updated on April 8, 2021",
   tags$br(),
-  "-	We found this dataset through Data.gov. The citation is listed in references."
+  "-	We found this dataset through Data.gov. The citation is listed in
+  references.",
+  tags$br()
 )
 
 findings <- tags$div(class = "text",
@@ -184,72 +272,160 @@ findings <- tags$div(class = "text",
   tags$i("1) Does limited broadband access impact test satisfactory levels?"),
   tags$br(),
   tags$br(),
-  tags$p("Our initial hypothesis was that limited broadband access would predictably lower test levels. We used two proxies for broadband access - internet speed and access points. We attempted to establish correlations between the two proxy variables and test levels. Our analysis resulted in slightly negative correlations, thereby opposing our hypothesis. However, there were several extenuating circumstances. First, correlation does not prove causation, and we would need further tests such as controlled experiments to confirm a causal relationship. Second, the quantity of data was a bit sparse and the strength of the correlation is therefore not as robust. Moreover, the correlation could have easily been positive if not for a couple of outliers. In short, our analysis suggests a negative correlation between broadband access and test levels, but further analysis with more data is required to conclusively support that."), 
+  tags$p("Our initial hypothesis was that limited broadband access would
+         predictably lower test levels. We used two proxies for broadband
+         access - internet speed and access points. We attempted to establish
+         correlations between the two proxy variables and test levels. Our
+         analysis resulted in slightly negative correlations, thereby opposing
+         our hypothesis. However, there were several extenuating circumstances.
+         First, correlation does not prove causation, and we would need further
+         tests such as controlled experiments to confirm a causal relationship.
+         Second, the quantity of data was a bit sparse and the strength of the
+         correlation is therefore not as robust. Moreover, the correlation could
+         have easily been positive if not for a couple of outliers. In short,
+         our analysis suggests a negative correlation between broadband access
+         and test levels, but further analysis with more data is required to
+         conclusively support that."),
   tags$br(),
   tags$br(),
-  tags$i("2) Is broadband access a factor in the different test subject performance?"),
+  tags$i("2) Is broadband access a factor in the different test subject
+         performance?"),
   tags$br(),
   tags$br(),
-  tags$p("Our initial hypothesis was that limited broadband access would negatively affect test levels in all subjects, since the Internet provides helpful resources in almost any domain. We attempted to break down the correlations between having generally acceptable broadband access and test levels by specific school subjects. The correlations for five different subjects were all slightly negative or close to zero. Our analysis suggests that broadband access has minimal impact on test levels in any subject. However, we would need to analyze more datasets to conclusively support that theory."),
+  tags$p("Our initial hypothesis was that limited broadband access would
+         negatively affect test levels in all subjects, since the Internet
+         provides helpful resources in almost any domain. We attempted to break
+         down the correlations between having generally acceptable broadband
+         access and test levels by specific school subjects. The correlations
+         for five different subjects were all slightly negative or close to
+         zero. Our analysis suggests that broadband access has minimal impact
+         on test levels in any subject. However, we would need to analyze more
+         datasets to conclusively support that theory."),
   tags$br(),
   tags$br(),
-  tags$i("3) Does English as a second language students' performance differ based on broadband speeds?"),
+  tags$i("3) Does English as a second language students' performance differ
+         based on broadband speeds?"),
   tags$br(),
   tags$br(),
-  tags$p("Our initial hypothesis was that limited broadband access would severely hurt the test levels of English language learners, since it would add another handicap to their language deficiencies. We attempted to establish correlations between having generally acceptable broadband access and test levels for English language learners, further breaking it down by middle school and high school students. There were a few signs of positive correlation, but overall there are no conclusive trends in the data. Moreover, we lacked sufficient data for 9th and 12th grade high schoolers. Unfortunately, the results are inconclusive to answer the question.")
+  tags$p("Our initial hypothesis was that limited broadband access would
+         severely hurt the test levels of English language learners, since it
+         would add another handicap to their language deficiencies. We attempted
+         to establish correlations between having generally acceptable broadband
+         access and test levels for English language learners, further breaking
+         it down by middle school and high school students. There were a few
+         signs of positive correlation, but overall there are no conclusive
+         trends in the data. Moreover, we lacked sufficient data for 9th and
+         12th grade high schoolers. Unfortunately, the results are inconclusive
+         to answer the question."),
+  tags$br()
 )
 
 discussion <- tags$div(class = "text",
   tags$h3("Discussion"),
   tags$br(),
-  tags$p("As our education systems begin to incorporate more technological aspects in their curriculum, students that do not have access to the internet are placed at a major disadvantage. From learning management systems such as Canvas and Pearson to tutorial sites like Khan Academy; these resources are only available to those with broadband access. Utilizing a report card dataset, area table, and geography look up table, we analyzed the percentage of students who met testing standards in correlation to the percentage of students with broadband access."),
+  tags$p("As our education systems begin to incorporate more technological
+         aspects in their curriculum, students that do not have access to the
+         internet are placed at a major disadvantage. From learning management
+         systems such as Canvas and Pearson to tutorial sites like Khan Academy;
+         these resources are only available to those with broadband access.
+         Utilizing a report card dataset, area table, and geography look up
+         table, we analyzed the percentage of students who met testing standards
+         in correlation to the percentage of students with broadband access."),
   tags$br(),
-  tags$p("We initially expected the percentage of students with broadband access to positively correlate with the percentage of students that met testing standards. However, to our surprise, after aggregating our datasets and plotting charts, we found that these two factors are negatively correlated for most of the testing subjects in our datasets: biology, mathematics, english language arts, and science. Because of our results, we were unable to come to a conclusion about the relationship between these two factors. Nonetheless, we do not believe our results imply that broadband access has a negative impact on student performance. We still consider broadband access to be an essential resource that every student should have. Even though we were unable to come to a conclusion for our research question, it is possible that the way we aggregated and filtered data revealed some other potential implications."),
+  tags$p("We initially expected the percentage of students with broadband access
+         to positively correlate with the percentage of students that met
+         testing standards. However, to our surprise, after aggregating our
+         datasets and plotting charts, we found that these two factors are
+         negatively correlated for most of the testing subjects in our datasets:
+         biology, mathematics, english language arts, and science. Because of
+         our results, we were unable to come to a conclusion about the
+         relationship between these two factors. Nonetheless, we do not believe
+         our results imply that broadband access has a negative impact on
+         student performance. We still consider broadband access to be an
+         essential resource that every student should have. Even though we were
+         unable to come to a conclusion for our research question, it is
+         possible that the way we aggregated and filtered data revealed some
+         other potential implications."),
   tags$br(),
-  tags$p("Our initial report card dataset had 951,000 student observations across the United States. The data was split into 30 different attributes; one of them being student group type. This attribute categorizes students into different groups: Homeless, Low Income, Students with Disabilities, and Foster to name a few. Due to our research topic, we completely disregarded this attribute hoping to analyze the full effects of broadband. However, this was a flaw in our analysis as we were unable to isolate the effects of the other attributes in the data. Even so, this has shed some light onto how we can look at this problem in the future."),
+  tags$p("Our initial report card dataset had 951,000 student observations
+         across the United States. The data was split into 30 different
+         attributes; one of them being student group type. This attribute
+         categorizes students into different groups: Homeless, Low Income,
+         Students with Disabilities, and Foster to name a few. Due to our
+         research topic, we completely disregarded this attribute hoping to
+         analyze the full effects of broadband. However, this was a flaw in our
+         analysis as we were unable to isolate the effects of the other
+         attributes in the data. Even so, this has shed some light onto how we
+         can look at this problem in the future."),
   tags$br(),
-  tags$p("The results that we have achieved through this project has brought our attention to the fact that there are many major variables that can factor into a student's success; not just broadband access. Rather than disregarding these variables, we should take into consideration their effects and see how having internet access improves the performance of students in these various groups.")
-  
+  tags$p("The results that we have achieved through this project has brought our
+         attention to the fact that there are many major variables that can
+         factor into a student's success; not just broadband access. Rather than
+         disregarding these variables, we should take into consideration their
+         effects and see how having internet access improves the performance of
+         students in these various groups."),
+  tags$br()
 )
 
 conclusion <- tags$div(class = "text",
    tags$h3("Conclusion"),
    tags$br(),
-   tags$p("In conclusion, having broadband access is crucial for student success. As the world of e-learning continues to grow, students without internet access are going to be placed at a major disadvantage: limited collaboration, communication, and restriction from the unending reservoir of knowledge of the online world. Even though there are many factors that influence student academic performance, having broadband access will only enhance their learning abilities. In order to address the inequity in education we must make sure that every future generation of students will have this resource. And that the only limiting factor to their learning is their own will and determination.")
+   tags$p("In conclusion, having broadband access is crucial for student
+          success. As the world of e-learning continues to grow, students
+          without internet access are going to be placed at a major
+          disadvantage: limited collaboration, communication, and restriction
+          from the unending reservoir of knowledge of the online world. Even
+          though there are many factors that influence student academic
+          performance, having broadband access will only enhance their learning
+          abilities. In order to address the inequity in education we must make
+          sure that every future generation of students will have this resource.
+          And that the only limiting factor to their learning is their own will
+          and determination.")
 )
 
 acknowledgements <- tags$div(class = "text",
   tags$h3("Acknowledgements"),
-  tags$span("We recognize Local Point for giving us our code name and selling overpriced food that prompted us to examine the notion of accessibility."),
+  tags$span("We recognize Local Point for giving us our code name and selling
+            overpriced food that prompted us to examine the notion of
+            accessibility."),
   tags$br(),
   tags$br(),
-  tags$img(src = "https://github.com/info-201a-wi22/Clowny-Cloud-Fish/raw/main/image/scam.jpeg", alt = "Scam"),
-  tags$img(src = "https://github.com/info-201a-wi22/Clowny-Cloud-Fish/raw/main/image/nugget.jpeg", alt = "Nugget")
+  tags$img(src = "https://github.com/info-201a-wi22/Clowny-Cloud-Fish/raw/main/image/scam.jpeg",
+           alt = "Scam"),
+  tags$img(src = "https://github.com/info-201a-wi22/Clowny-Cloud-Fish/raw/main/image/nugget.jpeg",
+           alt = "Nugget"),
+  tags$br()
 )
 
 references <- tags$div(class = "text",
-  tags$span("Gwinn, M. A. (2008, November 12). Malcolm Gladwell dissects success in \"Outliers\". The Seattle Times. Retrieved February 4, 2022, from https://www.seattletimes.com/entertainment/books/malcolm-gladwell-dissects-success-in-outliers/"),
+  tags$span("Gwinn, M. A. (2008, November 12). Malcolm Gladwell dissects success
+            in \"Outliers\". The Seattle Times. Retrieved February 4, 2022,
+            from https://www.seattletimes.com/entertainment/books/malcolm-gladwell-dissects-success-in-outliers/"),
   tags$br(),
   tags$br(),
-  tags$span("Internet Access and Education: Key considerations for policy makers. Internet Society. (2017, November 20). Retrieved February 4, 2022, from https://www.internetsociety.org/resources/doc/2017/internet-access-and-education/"),
+  tags$span("Internet Access and Education: Key considerations for policy makers.
+            Internet Society. (2017, November 20). Retrieved February 4, 2022,
+            from https://www.internetsociety.org/resources/doc/2017/internet-access-and-education/"),
   tags$br(),
   tags$br(),
-  tags$span("OSPI. (2019). Report Card Assessment Data 2016-17 School Year [CSV]. Retrieved from https://data.wa.gov/Education/Report-Card-Assessment-Data-2016-17-School-Year/5tvk-w2c5"),
+  tags$span("OSPI. (2019). Report Card Assessment Data 2016-17 School Year [CSV].
+            Retrieved from https://data.wa.gov/Education/Report-Card-Assessment-Data-2016-17-School-Year/5tvk-w2c5"),
   tags$br(),
   tags$br(),
-  tags$span("Riaz, Humza. (2018). Area Table June2016 [CSV]. Retrieved from https://opendata.fcc.gov/Wireline/Area-Table-June2016/nb5q-gkcn"),
+  tags$span("Riaz, Humza. (2018). Area Table June2016 [CSV]. Retrieved from
+            https://opendata.fcc.gov/Wireline/Area-Table-June2016/nb5q-gkcn"),
   tags$br(),
   tags$br(),
-  tags$span("Riaz, Humza. (2019). Geography Lookup Table [CSV]. Retrieved from https://opendata.fcc.gov/Wireline/Geography-Lookup-Table/v5vt-e7vw"),
+  tags$span("Riaz, Humza. (2019). Geography Lookup Table [CSV]. Retrieved from
+            https://opendata.fcc.gov/Wireline/Geography-Lookup-Table/v5vt-e7vw"),
   tags$br(),
   tags$br(),
-  tags$span("School Connectivity. National Center for Education Statistics. (n.d.). Retrieved February 4, 2022, from https://nces.ed.gov/pubs2002/internet/3.asp")
+  tags$span("School Connectivity. National Center for Education Statistics.
+            (n.d.). Retrieved February 4, 2022, from https://nces.ed.gov/pubs2002/internet/3.asp")
 )
 
-all_report_texts <- list(meta_data, abstract, introduction, design_situation, research_questions, data_sets, findings, discussion, conclusion, acknowledgements, references)
+all_report_texts <- list(meta_data, abstract, introduction, design_situation,
+                         research_questions, data_sets, findings, discussion,
+                         conclusion, acknowledgements, references)
 
 names(all_report_texts) <- report_choices
-
-
-  
-
