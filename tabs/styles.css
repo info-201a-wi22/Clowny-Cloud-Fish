@@ -16,7 +16,7 @@ span.tab {
   font-size:20px;
 }
 
-div.text:not(h3):not(h4) {
+.text:not(h3):not(h4) {
   font-size: 20px;
 }
 
