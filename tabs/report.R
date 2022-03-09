@@ -213,8 +213,11 @@ conclusion <- tags$div(class = "text",
 
 acknowledgements <- tags$div(class = "text",
   tags$h3("Acknowledgements"),
+  tags$span("We recognize Local Point for giving us our code name and selling overpriced food that prompted us to examine the notion of accessibility."),
   tags$br(),
-  tags$span("We recognize Local Point for giving us our code name and selling overpriced food that prompted us to examine the notion of accessibility.")
+  tags$br(),
+  tags$img(src = "https://github.com/info-201a-wi22/Clowny-Cloud-Fish/raw/main/image/scam.jpeg", alt = "Scam"),
+  tags$img(src = "https://github.com/info-201a-wi22/Clowny-Cloud-Fish/raw/main/image/nugget.jpeg", alt = "Nugget")
 )
 
 references <- tags$div(class = "text",

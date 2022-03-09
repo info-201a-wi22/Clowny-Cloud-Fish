@@ -3,11 +3,10 @@ library(shiny)
 summary_tab <- tabPanel(
   tags$span(class = "tab", "Summary"),
   titlePanel("Summary"),
+  tags$br(),
   mainPanel(tags$div(class = "text",
-    tags$br(),
-    tags$br(),
-    tags$br(),
     tags$span(tags$b("Caveat"), ": Our data is obviously not comprehensive and more analysis is definitely required for conclusive results. However, based on our analysis in this study, these are some suggestions to take away."),
+    tags$br(),
     tags$br(),
     tags$br(),
     tags$p(class = "takeaway", "1) Perhaps better broadband quality does not necessarily improve education as much as most people would assume. Based on all of our measures, our analysis does not adequately indicate that broadband quality improves academic results. This is a tentative theory that can be further tested. If more analysis confirms it, then that could perhaps change educational policy in a radical way by lowering the emphasis on broadband in school."),
