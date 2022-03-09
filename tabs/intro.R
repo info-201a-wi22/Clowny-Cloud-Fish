@@ -4,9 +4,9 @@ intro_tab <- tabPanel(
   tags$span(class = "tab", "Introduction"),
   titlePanel("Introduction"),
   mainPanel(
-    img(src = "connected_learning.jpeg", align = "center"),
+    tags$img(src = "connected_learning.jpeg", align = "center"),
     
-    p("The focus of our project is to determine whether or not broadband
+    tags$p("The focus of our project is to determine whether or not broadband
       accessibility impacted student academic performance for Washington state.
       We gauged student performance through state-proctored testing data from
       2016-2017 provided by the Office of Elementary and Secondary Education,

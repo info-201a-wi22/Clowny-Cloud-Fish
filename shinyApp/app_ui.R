@@ -7,8 +7,7 @@ source("../tabs/chart3.R")
 source("../tabs/summary.R")
 source("../tabs/report.R")
 source("../source/data_access.R")
-source("../image/connected_learning.jpeg")
-source("../image/learning_image.jpeg")
+
 
 ui <- navbarPage(
   tags$i(tags$span(style = "color:blue;font-size:30px;font-weight:bold", "Broadband Effect on Education")),
