@@ -2,7 +2,7 @@ library(shiny)
 
 report_choices <- c("Metadata", "Abstract", "Introduction", "Design Situation", 
                     "Research Questions", "Dataset", "Findings", "Discussion", 
-                    "Conclusion")
+                    "Conclusion", "Acknowledgements", "References")
 
 report_tab <- tabPanel(
   tags$span(class = "tab", "Report"),
@@ -211,7 +211,32 @@ conclusion <- tags$div(class = "text",
    tags$p("Insert Conclusion here")
 )
 
-all_report_texts <- list(meta_data, abstract, introduction, design_situation, research_questions, data_sets, findings, discussion, conclusion)
+acknowledgements <- tags$div(class = "text",
+  tags$h3("Acknowledgements"),
+  tags$br(),
+  tags$span("We recognize Local Point for giving us our code name and selling overpriced food that prompted us to examine the notion of accessibility.")
+)
+
+references <- tags$div(class = "text",
+  tags$span("Gwinn, M. A. (2008, November 12). Malcolm Gladwell dissects success in \"Outliers\". The Seattle Times. Retrieved February 4, 2022, from https://www.seattletimes.com/entertainment/books/malcolm-gladwell-dissects-success-in-outliers/"),
+  tags$br(),
+  tags$br(),
+  tags$span("Internet Access and Education: Key considerations for policy makers. Internet Society. (2017, November 20). Retrieved February 4, 2022, from https://www.internetsociety.org/resources/doc/2017/internet-access-and-education/"),
+  tags$br(),
+  tags$br(),
+  tags$span("OSPI. (2019). Report Card Assessment Data 2016-17 School Year [CSV]. Retrieved from https://data.wa.gov/Education/Report-Card-Assessment-Data-2016-17-School-Year/5tvk-w2c5"),
+  tags$br(),
+  tags$br(),
+  tags$span("Riaz, Humza. (2018). Area Table June2016 [CSV]. Retrieved from https://opendata.fcc.gov/Wireline/Area-Table-June2016/nb5q-gkcn"),
+  tags$br(),
+  tags$br(),
+  tags$span("Riaz, Humza. (2019). Geography Lookup Table [CSV]. Retrieved from https://opendata.fcc.gov/Wireline/Geography-Lookup-Table/v5vt-e7vw"),
+  tags$br(),
+  tags$br(),
+  tags$span("School Connectivity. National Center for Education Statistics. (n.d.). Retrieved February 4, 2022, from https://nces.ed.gov/pubs2002/internet/3.asp")
+)
+
+all_report_texts <- list(meta_data, abstract, introduction, design_situation, research_questions, data_sets, findings, discussion, conclusion, acknowledgements, references)
 
 names(all_report_texts) <- report_choices
 

@@ -32,6 +32,10 @@ p {
   text-indent: 30px;
 }
 
+p.takeaway {
+  text-indent: 0px !important;
+}
+
 .shiny-input-container {
   font-size: 20px;
 }
